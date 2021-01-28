@@ -1,0 +1,73 @@
+#containment-wrapper{
+	width:10000px;
+	height:7000px;
+	background-color:#ffffff;
+}
+
+.item{
+	position:absolute;
+	width:50px;
+}
+.avatar{
+	position:absolute;
+	width:70px;
+}
+.wide-avatar{
+	position:absolute;
+	width:120px;
+}
+.place{
+	position:absolute;
+	width:1000px;
+}
+.vehicle{
+	position:absolute;
+	width:200px;
+}
+.building{
+	position:absolute;
+	width:800px;
+}
+.furniture{
+	position:absolute;
+	width:500px;
+}
+.inventory{
+display:none;
+border:2px dashed #ccc;
+margin-top:100px;
+width:300px;
+height:300px;
+}
+.pack{
+	position:absolute;
+	width:500px;
+}
+.pack-avatar{
+	width:70px;
+}
+.pack-wide-avatar{
+	width:120px;
+}
+.food{
+	width:50px;
+}
+.gone{
+	display:none;
+}
+.small-item{
+	position:absolute;
+	width:30px;
+}
+.medium-item{
+	position:absolute;
+	width:180px;
+}
+.big-item{
+	position:absolute;
+	width:200px;
+}
+.huge-item{
+	position:absolute;
+	width:700px;
+}

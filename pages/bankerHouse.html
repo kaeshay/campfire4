@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banker House</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/sub.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+	#house{
+		position:absolute;
+		left:200px;
+/*		height:600px;*/
+		width:800px;
+	}
+	#fridge{
+		top:1200px;
+		left:250px;
+	}
+	#table{
+		top:1200px;
+		left:390px;
+	}
+	#bathroom{
+		top:1200px;
+		left:800px;
+		width:100px;
+	}
+	#shower{
+		top:1200px;
+		left:730px;
+		width:100px;
+	}
+	#bed{
+		top:800px;
+		left:390px;
+		width:400px;
+	}
+	#blanket{
+		top:800px;
+		left:390px;
+		width:400px;
+	}
+	</style>
+</head>
+<body>
+	<img id="house" class="room" src="../assets/kay/banker-house-inside.png">
+	<img id="table" class="draggable medium-item" src="../assets/maria/table.png">
+	<img id="bathroom" class="draggable medium-item" src="../assets/kay/bathroom.png">
+	<img id="shower" class="draggable medium-item" src="../assets/rui/shower.png">
+	<img id="bed" class="draggable medium-item" src="../assets/maria/bed.png">
+	<div class="avatars">
+		<img class="draggable avatar" src="../assets/kay/banker1.png">
+		<img class="draggable avatar" src="../assets/kay/banker2.png">
+		<img class="draggable avatar" src="../assets/rui/banker1.png">
+		<img class="draggable avatar" src="../assets/rui/banker2.png">
+		<img class="draggable avatar" src="../assets/rui/banker3.png">
+	</div>
+	<img id="blanket" class="draggable medium-item" src="../assets/maria/blanket.png">
+	<div class="inventory">
+		<img id="fridge" ondblclick="transform('kay','fridge')" class="draggable small-item" src="../assets/kay/fridge1.png">
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/draggable.js"></script>
+<script type="text/javascript" src="../scripts/sub.js"></script>
+</html>

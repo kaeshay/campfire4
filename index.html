@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campfire 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/position.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+</head>
+<body onLoad="window.scroll(600,2000)">
+	<div id="containment-wrapper">
+		<div id="outerspace" style="">
+		</div>
+		<div id="skyBelt"></div>
+		<img id="georgie" class="draggable place" src="assets/aziz/georgie.png">
+		<img id="draggable" class="place" src="assets/places/field1.png">
+		<img id="draggable" class="place" src="assets/places/island.png">
+		<img id="draggable" class="furniture" src="assets/places/shelf.png">
+		<a href="pages/hiddenRestaurant.html">
+		<img id="draggable" class="furniture" src="assets/places/stairs.png"></a>
+		<img id="draggable" class="place" src="assets/places/water.png">
+		<img id="draggable" class="place" src="assets/places/road.png">
+		<a href="file:///Users/kayliang/Desktop/campfire2/index.html">
+		<img id="draggable" class="vehicle" src="assets/rui/ladder.png"></a>
+		<img id="amalStage" class="furniture" src="assets/amal/stage.png">
+		<img id="amalRainbow" class="place" src="assets/amal/rainbow.png">
+		<img id="kayFarm" class="place" src="assets/places/farm.png">
+		<img id="kayStation" class="furniture" src="assets/places/train-station.png">
+		<img id="kayTrack" class="place" src="assets/places/train-track.png">
+		<img id="kayTrack2" class="place" src="assets/places/train-track.png">
+		<img id="kayTrack3" class="place" src="assets/places/train-track.png">
+		<img id="kayTrack4" class="place" src="assets/places/train-track.png">
+		<img id="aristotleOffice" class="furniture" src="assets/aristotle/office.png">
+		<img id="kayTube" class="place" src="assets/places/tube.png">
+		<img id="kayTube2" style="width:2300px" class="draggable place" src="assets/kay/tube2.png">
+		<img id="amalBuilding" class="furniture" src="assets/amal/building.png">
+		<img id="sophieCandyland" class="place" src="assets/sophie/candyland.png">
+		<img id="kayMarbleSlide" class="place" src="assets/kay/marble-slide.png">
+		<img id="scarletVolcano" class="place" src="assets/scarlet/volcano.png">
+
+
+
+
+		<!-- 2021-1-11 -->
+		<img id="draggable" class="vehicle" src="assets/rui/three-guys.png">
+		<img id="draggable" class="avatar" src="assets/aziz/lizzy.png">
+		<img id="draggable" ondblclick="playSound('azizBell')" class="avatar" src="assets/aziz/bell.png">
+		<audio id="azizBell" src="assets/aziz/bell.mp3"></audio>
+		<img id="draggable" class="wide-avatar" src="assets/aziz/snowman-cutter.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/boat.png">
+		<img id="draggable" class="vehicle" src="assets/amal/catcher.png">
+		<img id="draggable" class="avatar" src="assets/amal/fluffy.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/key.png">
+
+		<!-- 2021-1-12 -->
+		<img id="draggable" class="avatar" src="assets/rui/pistachio.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/yoshi.png">
+		<img id="draggable" ondblclick="transformClass('kay','magician')" class="magician avatar" src="assets/kay/magician1.png">
+
+		<!-- 2021-1-13 -->
+		<img id="draggable" class="wide-avatar" src="assets/aziz/bunny.png">
+		<img id="draggable" class="avatar" src="assets/amal/headband1.png">
+		<img id="draggable" class="avatar" src="assets/amal/headband2.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/lookout-tower.png">
+
+		<!-- 2021-1-14 -->
+		<img id="draggable" class="furniture" src="assets/kay/crops.png">
+		<img id="draggable" class="place" src="assets/kay/horses.png">
+		<img id="draggable" ondblclick="transformClass('adriana','popup-toilet')" class="popup-toilet vehicle" src="assets/adriana/popup-toilet1.png">
+		<img id="draggable" class="vehicle" src="assets/kay/kindergarten.png">
+		<img id="draggable" ondblclick="transformClass('rui','rui-orange')"class="rui-orange item" src="assets/rui/rui-orange1.png">
+		<img id="draggable" class="item" src="assets/rui/tomato.png">
+		<img id="draggable" class="item" src="assets/rui/carrot.png">
+		<img id="draggable" class="item" src="assets/lumen/bus-stop.png">
+		<img id="draggable" class="item" src="assets/lumen/lamp.png">
+		<img id="draggable" ondblclick="transformClass('lumen','lumen-totoro')" class="lumen-totoro avatar" src="assets/lumen/lumen-totoro1.png">
+		<img id="draggable" class="avatar" src="assets/lumen/totoro.png">
+		<img id="draggable" class="vehicle" src="assets/lumen/sheep.png">
+		<img id="draggable" class="vehicle" src="assets/lumen/cat-bus.png">
+		<img id="draggable" class="avatar" src="assets/lumen/may.png">
+
+		<!-- 2021-1-15 -->
+		<a href="pages/bankerHouse.html">
+		<img id="draggable" class="furniture" src="assets/rui/banker-house.png"></a>
+		<img id="draggable" class="avatar" src="assets/rui/banker1.png">
+		<img id="draggable" class="avatar" src="assets/rui/banker2.png">
+		<img id="draggable" class="avatar" src="assets/rui/banker3.png">
+		<img id="draggable" class="avatar" src="assets/kay/banker1.png">
+		<img id="draggable" class="avatar" src="assets/kay/banker2.png">
+		<img id="draggable" class="vehicle" src="assets/rui/smiley-faces.png">
+
+		<!-- 2021-1-18 -->
+		<div id="draggable" class="pack">
+			<img class="vehicle" src="assets/mina/llama-cart.png">
+			<img id="minaFridge" class="draggable avatar" ondblclick="showInventory('fridge-inventory')" src="assets/mina/fridge.png"">
+			<img class="draggable small-item" src="assets/sophie/hershey.png">
+			<img class="draggable avatar" src="assets/sophie/penguins/1.png">
+			<img class="draggable small-item" src="assets/scarlet/marshmallow.png">
+			<img class="draggable avatar" style="width:20px" src="assets/ava/cat1.png">
+			<img class="draggable avatar" style="width:20px" src="assets/ava/cat2.png">
+			<img class="draggable wide-avatar" src="assets/scarlet/pet-cat.png">
+			<img class="draggable wide-avatar" src="assets/sophie/penguin.png">
+			<img class="draggable small-item" src="assets/kay/fly.png">
+			<img class="draggable building" style="width:200px" src="assets/scarlet/bunny.png">
+			<img ondblclick="show('minaTooth')" class="draggable avatar" src="assets/mina/girl.png">
+			<div id="fridge-inventory" class="inventory">
+				<img class="draggable food" src="assets/sophie/food/1.png">
+				<img class="draggable food" src="assets/sophie/food/2.png">
+				<img class="draggable food" src="assets/sophie/food/3.png">
+				<img class="draggable food" src="assets/sophie/food/4.png">
+				<img class="draggable food" src="assets/sophie/food/5.png">
+				<img class="draggable food" src="assets/sophie/food/6.png">
+				<img class="draggable food" src="assets/sophie/food/7.png">
+				<img class="draggable food" src="assets/sophie/food/8.png">
+				<img class="draggable food" src="assets/sophie/food/9.png">
+				<img class="draggable food" src="assets/sophie/food/10.png">
+				<img class="draggable food" src="assets/sophie/food/11.png">
+				<img class="draggable food" src="assets/sophie/food/12.png">
+				<img class="draggable food" src="assets/sophie/food/13.png">
+				<img class="draggable food" src="assets/sophie/food/14.png">
+				<img class="draggable food" src="assets/sophie/food/15.png">
+				<img class="draggable food" src="assets/sophie/food/16.png">
+				<img class="draggable food" src="assets/sophie/food/17.png">
+				<img class="draggable food" src="assets/sophie/food/18.png">
+				<img class="draggable food" src="assets/sophie/food/19.png">
+				<img class="draggable food" src="assets/sophie/food/20.png">
+				<img class="draggable food" src="assets/sophie/food/21.png">
+				<img class="draggable food" src="assets/sophie/food/22.png">
+				<img class="draggable food" src="assets/sophie/food/23.png">
+				<img class="draggable food" src="assets/sophie/food/24.png">
+				<img class="draggable food" src="assets/sophie/food/25.png">
+				<img class="draggable food" src="assets/sophie/food/26.png">
+				<img class="draggable food" src="assets/sophie/food/27.png">
+				<img class="draggable food" src="assets/ava/icecream.png">
+				<img class="draggable food" src="assets/scarlet/bubble-tea2.png">
+				<img class="draggable small-item" src="assets/scarlet/cupcake2.png">
+			</div>
+		</div>
+
+		<!-- 1/19/2021 -->
+		<img id="draggable" class="vehicle" src="assets/aziz/dragon.png">
+		<img id="draggable" class="avatar" src="assets/aristotle/aristotle.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/passenger-train.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/train.png">
+		<img id="draggable" class="wide-avatar" src="assets/aristotle/stopper.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/marker.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/marker2.png">
+		<img id="draggable" class="avatar" src="assets/rui/black-pengu.png">
+		<img id="draggable" class="avatar" src="assets/rui/red-pengu.png">
+		<img id="draggable" class="avatar" src="assets/rui/hedgehog.png">
+		<img id="draggable" class="avatar" src="assets/rui/block-eye.png">
+
+		<!-- 1/20/2021 -->
+		<img id="draggable" class="avatar" src="assets/adriana/headband.png">
+		<img id="draggable" class="avatar" src="assets/maria/bagel.png">
+		<img id="draggable" class="avatar" src="assets/maria/strawberry.png">
+		<img id="draggable" class="avatar" src="assets/maria/sparkle.png">
+		<img id="draggable" class="avatar" src="assets/maria/sparkle.png">
+		<img id="draggable" class="vehicle" src="assets/maria/pooppea.png">
+		<img id="draggable" class="vehicle" src="assets/aziz/crab.png">
+		<div id="draggable" class="pack">
+			<img class="draggable pack-avatar" src="assets/amal/me.png">
+			<img class="draggable pack-wide-avatar" src="assets/amal/amali.png">
+			<img class="draggable pack-avatar" src="assets/amal/hamodi.png">
+			<img class="draggable pack-avatar" src="assets/amal/dog.png">
+		</div>
+
+		<!-- 1/21/2021 -->
+		<img id="draggable" class="avatar" src="assets/kay/sheperd.png">
+
+		<!-- 1/22/2021 -->
+		<img id="draggable" class="vehicle" src="assets/lumen/sheep.png">
+		<img id="draggable" class="vehicle" src="assets/kay/swimmer1.png">
+		<img id="draggable" class="vehicle" src="assets/kay/swimmer2.png">
+		<img id="draggable" class="avatar" src="assets/kay/fish1.png">
+		<img id="draggable" class="avatar" src="assets/kay/fish2.png">
+		<img id="draggable" class="avatar" src="assets/kay/fish3.png">
+		<img id="draggable" class="avatar" src="assets/kay/fish4.png">
+		<img id="draggable" class="avatar" src="assets/kay/fish5.png">
+		<img id="draggable" class="avatar" src="assets/aristotle/phone.png">
+
+		<!-- 1/24/2021 -->
+		<img id="draggable" class="wide-avatar" src="assets/francis/lincoln-bird.png">
+		<img id="draggable" class="wide-avatar" src="assets/francis/lily-baby.png">
+		<img id="draggable" class="wide-avatar" src="assets/scarlet/alien.png">
+		<img id="draggable" ondblclick="transformClass('aristotle','boulder')" class="boulder wide-avatar" src="assets/aristotle/boulder1.png">
+		<img id="draggable" ondblclick="transformClass('aristotle','heatwave')" class="heatwave wide-avatar" src="assets/aristotle/heatwave1.png">
+		<img id="draggable" ondblclick="transformClass('aristotle','helicop')" class="helicop wide-avatar" src="assets/aristotle/helicop1.png">
+		<img id="draggable" ondblclick="transformClass('aristotle','optimus-prime')" class="optimus-prime wide-avatar" src="assets/aristotle/optimus-prime1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/swimmer1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/swimmer2.png">
+		<img id="draggable" class="avatar" src="assets/ava/box.png">
+		<img id="draggable" class="avatar" src="assets/ava/choc.png">
+		<img id="draggable" class="medium-item" src="assets/ava/face.png">
+		<img id="draggable" class="medium-item" src="assets/ava/orange.png">
+		<img id="draggable" class="item" src="assets/ava/orange-glass.png">
+		<img id="draggable" class="item" src="assets/ava/unknown.png">
+
+		<!-- 1-25-2021 -->
+		<img id="draggable" class="vehicle" src="assets/aziz/babbit.png">
+
+		<!-- 1-26-2021-->
+		<img id="draggable" class="furniture" src="assets/aristotle/gordon-train.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/gordon1.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/gordon2.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/green-train.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/rebecca.png">
+
+		<img id="draggable" class="avatar" src="assets/aziz/annotate.png">
+		<img id="draggable" ondblclick="transformClass('rui','hypnotic')" class="hypnotic wide-avatar" src="assets/rui/hypnotic1.png">
+		<img id="draggable" class="avatar" src="assets/kay/marble1.png">
+		<img id="draggable" class="avatar" src="assets/kay/marble2.png">
+		<img id="draggable" class="avatar" src="assets/kay/marble3.png">
+		<img id="draggable" class="avatar" src="assets/kay/marble4.png">
+
+		<img id="draggable" class="vehicle" src="assets/aristotle/train-car.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/train-carts.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/train-connected.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/train-red-blue.png">
+		<img id="draggable" class="furniture" src="assets/aristotle/train-squiggly.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/train-scribble.png">
+
+		<!-- 1-27-2021 -->
+		<img id="draggable" class="avatar" src="assets/rui/birdie.png">
+		<img id="draggable" class="avatar" src="assets/rui/clayguy.png">
+		<img id="draggable" ondblclick="transformClass('rui','croc')" class="croc avatar" src="assets/rui/croc1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/dragon.png">
+		<img id="draggable" class="vehicle" src="assets/rui/fastcar.png">
+		<img id="draggable" class="avatar" src="assets/rui/fluffy.png">
+		<img id="draggable" class="avatar" src="assets/rui/mouse1.png">
+		<img id="draggable" class="avatar" src="assets/rui/mouse2.png">
+		<img id="draggable" class="avatar" src="assets/aristotle/ironman.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/train1.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/train2.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/train3.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/barn1.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/barn2.png">
+		<img id="draggable" class="vehicle" src="assets/aristotle/barn3.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/alien1.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/alien2.png">
+		<img id="draggable" class="wide-avatar" src="assets/rui/alien3.png">
+		<img id="draggable" class="wide-avatar" src="assets/aziz/alien1.png">
+		<img id="draggable" class="wide-avatar" src="assets/aziz/alien2.png">
+		<img id="draggable" class="vehicle" src="assets/kay/amanda.png">
+
+		<div id="draggable" class="checkboard">
+			<img class="draggable" style="width:300px" src="assets/kay/checkboard.png">
+			<img class="draggable food" src="assets/kay/pieces/1.png">
+			<img class="draggable food" src="assets/kay/pieces/2.png">
+			<img class="draggable food" src="assets/kay/pieces/3.png">
+			<img class="draggable food" src="assets/kay/pieces/4.png">
+			<img class="draggable food" src="assets/kay/pieces/5.png">
+			<img class="draggable food" src="assets/kay/pieces/6.png">
+			<img class="draggable food" src="assets/kay/pieces/7.png">
+		</div>
+
+	</div>
+
+	<div id="emergencyCover">
+	</div>
+
+	<div id="toolbox">
+		<img id="turnButton" class="tool" onclick="turnSwitch()" src="assets/tools/dice.png">
+		<a href="pages/spinTheWheel.html">
+		<img id="spinButton" class="tool" src="assets/tools/wheel-all.png"></a>
+		<img id="lightButton" class="tool" onclick="lightOff()" src="assets/tools/bulb.png">
+		<img id="sanitizerButton" class="draggable tool" ondblclick="sanitizerOpen()" src="assets/aziz/sanitizer-close.png">
+		<img id="brushButton" ondblclick="changeBrush()" class="draggable tool" src="assets/aziz/brush-tool.png">
+		<a href="assets/aziz/globe.mp4">
+		<img id="globeButton" ondrag="enlarge('globeButton')" class="draggable tool" src="assets/aziz/globe.png"></a>
+		<img id="passport" ondrag="enlarge('passport')" ondblclick="transformId('aziz','passport')" class="draggable tool" src="assets/aziz/passport1.png">
+		<img id="amalPassport1" ondrag="enlarge('amalPassport1')" class="draggable tool" src="assets/amal/passport1.png">
+		<img id="amalPassport2" ondrag="enlarge('amalPassport2')" class="draggable tool" src="assets/amal/passport2.png">
+		<img id="computerButton" ondrag="enlarge('computerButton')" class="draggable tool" src="assets/aziz/computer-tool.png">
+		<a href="pages/schedule.html">
+		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
+		<img id="emergencyButton" class="tool" ondblclick="emergencyOn()" src="assets/tools/emergency-button.png">
+	</div>
+</body>
+<script type="text/javascript" src="scripts/draggable.js"></script>
+<script type="text/javascript" src="scripts/toggle.js"></script>
+<script type="text/javascript" src="scripts/tools.js"></script>
+</html>

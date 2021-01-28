@@ -1,0 +1,24 @@
+.room{
+	position:absolute;
+	width:800px;
+}
+.avatar{
+	width:70px;
+}
+.small-item{
+	position:absolute;
+	width:100px;
+}
+.medium-item{
+	position:absolute;
+	width:200px;
+}
+.avatars{
+	position:absolute;
+	top:400px;
+	left:200px;
+}
+.inventory{
+	position:absolute;
+	width:1000px;
+}

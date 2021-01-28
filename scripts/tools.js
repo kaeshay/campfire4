@@ -1,0 +1,96 @@
+var soundCounter=0;
+function playSound(idString){
+	var sound=document.getElementById(idString);
+	if (soundCounter==0){
+		sound.play();
+		soundCounter++;
+	} else if (soundCounter==1){
+		sound.pause();
+		soundCounter=0;
+	}
+}
+
+var turnCounter=0;
+function turnSwitch(){
+	element=document.getElementById("turnButton");
+	if(turnCounter==0){
+		element.src="assets/tools/rui.png";
+		turnCounter++;
+	} else if(turnCounter==1){
+		element.src="assets/tools/amali.png";
+		turnCounter++;
+	} else if(turnCounter==2){
+		element.src="assets/tools/aziz.png";
+		turnCounter++;
+	} else if(turnCounter==3){
+		element.src="assets/tools/aristotle.png";
+		turnCounter++;
+	} else if(turnCounter==4){
+		element.src="assets/tools/dice.png";
+		turnCounter=0;
+	}
+}
+
+var emergencyCounter=0;
+function emergencyOn(){
+	element=document.getElementById("emergencyCover");
+	if(emergencyCounter==0){
+		element.style.display="block";
+		emergencyCounter++;
+	} else if(emergencyCounter==1){
+		element.style.display="none";
+		emergencyCounter=0;
+	}
+}
+
+var lightCounter=0;
+function lightOff(){
+	element=document.getElementById('containment-wrapper');
+	toolbox=document.getElementById('toolbox');
+	toilet=document.getElementsByClassName('popup-toilet')[0];
+	if(lightCounter==0){
+		element.style.filter="invert(1)";
+		toolbox.style.filter="invert(1)";
+		toilet.src="assets/adriana/popup-toilet2.png";
+		lightCounter++;
+	} else if(lightCounter==1){
+		element.style.filter="invert(0)";
+		toolbox.style.filter="invert(0)";
+		toilet.src="assets/adriana/popup-toilet1.png";
+		lightCounter=0;
+	}
+}
+
+var sanitizerCounter=0;
+function sanitizerOpen(){
+	element=document.getElementById('sanitizerButton');
+	if(sanitizerCounter==0){
+		element.src="assets/aziz/sanitizer-open.png";
+		sanitizerCounter++;i
+	} else if(sanitizerCounter==1){
+		element.src="assets/aziz/sanitizer-close.png";
+		sanitizerCounter=0;
+	}
+}
+
+var brushCounter=0;
+function changeBrush(){
+	element=document.getElementById('brushButton');
+	if(brushCounter==0){
+		element.src="assets/aziz/chalk-closed.png";
+		brushCounter++;i
+	} else if(brushCounter==1){
+		element.src="assets/aziz/chalk-open.png";
+		brushCounter++;
+	} else if(brushCounter==1){
+		element.src="assets/aziz/brush-tool.png";
+		brushCounter++;
+	}
+}
+
+function enlarge(idString){
+	element=document.getElementById(idString);
+	element.style.width='200px';
+	element.style.position='absolute';
+	element.style.height='auto';
+}
