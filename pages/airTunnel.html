@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Tunnel</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/sub.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+	body{
+		background-color:black;
+	}
+	#colorCloud{
+		position:absolute;
+		left:1000px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="avatars">
+		<img id="colorbag" class="draggable big-item" ondblclick="transformId('sophie','colorbag')" src="../assets/sophie/colorbag1.png">
+		<img class="draggable avatar" src="../assets/sophie/hershey.png">
+		<img class="draggable avatar" src="../assets/sophie/penguins/1.png">
+		<img class="draggable small-item" src="../assets/scarlet/marshmallow.png">
+		<img class="big-item" src="../assets/mina/llama-cart.png">
+		<img class="draggable avatar" src="../assets/ava/cat1.png">
+		<img class="draggable avatar" src="../assets/ava/cat2.png">
+	</div>
+	<img id="colorCloud" class="draggable big-item" src="../assets/ava/color-cloud.png">
+	<div class="inventory">
+	</div>
+</body>
+<script type="text/javascript" src="../scripts/draggable.js"></script>
+<script type="text/javascript" src="../scripts/sub.js"></script>
+</html>

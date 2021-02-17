@@ -13,6 +13,10 @@
 	position:absolute;
 	width:200px;
 }
+.big-item{
+	position:absolute;
+	width:400px;
+}
 .avatars{
 	position:absolute;
 	top:400px;

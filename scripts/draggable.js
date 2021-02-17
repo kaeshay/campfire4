@@ -26,3 +26,14 @@ $(function() {
     $( ".draggable" ).draggable();
   });
 
+
+const loot = document.querySelectorAll('.stealable');
+
+for (var i = 0; i < loot.length; i++) {
+    loot[i].addEventListener('click', function(e) { 
+        if (e.altKey) {
+            // console.log(this);
+            this.style.display="none";
+        }
+    })  
+}

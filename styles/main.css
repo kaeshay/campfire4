@@ -1,5 +1,5 @@
 #containment-wrapper{
-	width:10000px;
+	width:15000px;
 	height:7000px;
 	background-color:#ffffff;
 }
@@ -43,11 +43,18 @@ height:300px;
 	position:absolute;
 	width:500px;
 }
+.pack{
+	position:absolute;
+	width:500px;
+}
 .pack-avatar{
 	width:70px;
 }
 .pack-wide-avatar{
 	width:120px;
+}
+.shrinkable{
+	width:30px;
 }
 .food{
 	width:50px;

@@ -24,14 +24,28 @@ function transformId(makerString, idString){
 		}
 	// }
 }
-var counter = 0;
+var showCounter = 0;
 function showInventory(idString){
 	element = document.getElementById(idString);
-	if(counter==0){
+	if(showCounter==0){
 		element.style.display='block';
-		counter++;
-	} else if (counter==1){
+		showCounter++;
+	} else if (showCounter==1){
 		element.style.display='none';
-		counter=0;
+		showCounter=0;
+	}
+}
+var sunglassesCounter = 0;
+function showGlasses(){
+	seller = document.getElementsByClassName("sunglass-seller")[0];
+	sunglasses =  document.getElementById("sunglasses")
+	if(showCounter==0){
+		seller.src="assets/kay/sunglass-seller2.png";
+		sunglasses.style.display='block';
+		showCounter++;
+	} else if (showCounter==1){
+		seller.src="assets/kay/sunglass-seller1.png";
+		sunglasses.style.display='none';
+		showCounter=0;
 	}
 }

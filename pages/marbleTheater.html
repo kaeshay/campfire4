@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/sub.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+	#videoPlayer{
+		position:absolute;
+		top:130px;
+		left:100px;
+		height:500px;
+		margin:auto;
+	}
+	#nextButton{
+		position:absolute;
+		top:600px;
+		left:550px;
+		height:20px;
+	}
+	#slide{
+		width:1500px;
+	}
+	</style>
+</head>
+<body>
+	<img id="slide" src="../assets/dirar/marble-sparkle.png">
+	<div id="videoPlayer_wrapper">
+		<video id="videoPlayer"controls autoplay>
+		 	<source src="../assets/marbleVideos/1.mov" type="video/mp4"> 
+        </video>
+	</div>
+	<button id="nextButton" type="button" onclick="nextVideo()"> > </button>
+</body>
+<script>
+	var counter = 0;
+	function nextVideo(){
+		element=document.getElementById('videoPlayer');
+		if (counter==0){
+			element.src="../assets/marbleVideos/2.mov";
+			counter++;
+		} else if (counter==1){
+			element.src="../assets/marbleVideos/3.mov";
+			counter++;
+		} else if (counter==2){
+			element.src="../assets/marbleVideos/1.mov";
+			counter=0;
+		}
+	}
+</script>
+<script type="text/javascript" src="../scripts/draggable.js"></script>
+</html>

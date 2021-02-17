@@ -1,13 +1,13 @@
 #outerspace{
   background-color:#000000;
   border:2px solid;
-  width:10000px;
+  width:15000px;
   height:1500px;
   background-image: url('../assets/amal/stars2.jpg');
   background-repeat: repeat;
 }
 #skyBelt{
-  width:10000px;
+  width:15000px;
   height:700px;
  /* background: black;*/
   background-image:url('../assets/amal/stars.png')
@@ -41,6 +41,11 @@
 #amalStage{
   position:absolute;
   left:1500px;
+  top:2300px;
+}
+#askBuilding{
+  position:absolute;
+  left:2200px;
   top:2300px;
 }
 #kayFarm{
@@ -106,13 +111,13 @@
 }
 #sophieCandyland{
   position:absolute;
-  left:6500px;
+  left:9500px;
   top:2750px;
   width:1500px;
 }
 #scarletVolcano{
   position:absolute;
-  left:7600px;
+  left:10600px;
   top:2750px;
   width:1500px;
 }
@@ -122,6 +127,144 @@
   top:2200px;
   width:1500px;
 }
+#marbleCourse1{
+  position:absolute;
+  left:6500px;
+  top:1800px;
+/*  width:1500px;*/
+}
+#marbleCourse2{
+  position:absolute;
+  left:7500px;
+  top:2500px;
+/*  width:1500px;*/
+}
+#marbleCourse3{
+  position:absolute;
+  left:7500px;
+  top:2000px;
+/*  width:1500px;*/
+}
 .checkboard{
   width:500px;
+}
+#scarletPortal{
+  position:absolute;
+  top:1200px;
+  width:400px;
+  left:700px;
+}
+#amalPortal{
+  position:absolute;
+  top:1200px;
+  left:9000px;
+}
+#kayRoad1{
+  position:absolute;
+  left:4040px;
+  top:2900px;
+  width:1500px;
+}
+#kayRoad2{
+  position:absolute;
+  left:5340px;
+  top:2980px;
+  width:1500px;
+}
+#kayRoad3{
+  position:absolute;
+  left:6640px;
+  top:3060px;
+  width:1500px;
+}
+#kayRoad4{
+  position:absolute;
+  left:7940px;
+  top:3140px;
+  width:1500px;
+}
+#sunglasses{
+  position:absolute;
+  left:50px;
+  top:20px;
+  width:100px;
+  display:none;
+}
+#sunglasses img{
+  margin:-10px;
+}
+#aristotleCars{
+  position:absolute;
+  left:4040px;
+  top:3000px;
+  width:6000px;
+}
+#aristotleCars img{
+  margin:-30px;
+}
+.car{
+  width:200px;
+}
+#spaghettiJail{
+  position:absolute;
+  left:7740px;
+  top:3400px;
+}
+#azizBed{
+  position:absolute;
+  left:8340px;
+  top:3500px;
+}
+#aristotleRailroad{
+  position:absolute;
+  left:6440px;
+  top:3300px;
+}
+#kayRiver{
+  position:absolute;
+  top:2000px;
+  left:12000px;
+}
+#kayBridge{
+  position:absolute;
+  top:4400px;
+  left:12000px;
+}
+#kayRink{
+  position:absolute;
+  left:8340px;
+  top:4500px;
+}
+#airVolcano{
+  position:absolute;
+  left:11740px;
+  top:6000px;
+  width:1500px;
+}
+#puppyForest{
+  position:absolute;
+  left:9740px;
+  top:4000px;
+  width:2000px;
+}
+#kayTents{
+  position:absolute;
+  left:11400px;
+  top:4500px;
+}
+#amalVolcano{
+  position:absolute;
+  left:9640px;
+  top:5500px;
+}
+#ruiVolcano{
+  position:absolute;
+  left:8640px;
+  top:5500px;
+}
+
+#amalToyShop{
+  position:absolute;
+  left:8940px;
+  top:3500px;
 }
