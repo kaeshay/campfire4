@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Campfire 4</title>
@@ -38,15 +38,16 @@
 		<img id="kayTube" class="place" src="assets/places/tube.png">
 		<img id="kayTube2" style="width:2300px" class="draggable place" src="assets/kay/tube2.png">
 		<img id="amalBuilding" class="furniture" src="assets/amal/building.png">
-		<img id="sophieCandyland" class="place" src="assets/sophie/candyland.png">
+		<img id="candyland" ondblclick="transformId('sophie','candyland')" class="place" src="assets/sophie/candyland1.png">
 		<img id="kayMarbleSlide" class="place" src="assets/kay/marble-slide.png">
 		<img id="scarletVolcano" class="place" src="assets/scarlet/volcano.png">
 		<a href="file:///Users/kayliang/Documents/Home/Games/campfire3/index.html">
 		<img id="scarletPortal" class="building" src="assets/scarlet/swirl.png"></a>
-		<img id="kayRoad1" class="place" src="assets/places/road2.png">
+		<div id="kayRoad1"></div>
+		<!-- <img id="kayRoad1" class="place" src="assets/places/road2.png">
 		<img id="kayRoad2" class="place" src="assets/places/road2.png">
 		<img id="kayRoad3" class="place" src="assets/places/road2.png">
-		<img id="kayRoad4" class="place" src="assets/places/road2.png">
+		<img id="kayRoad4" class="place" src="assets/places/road2.png"> -->
 		<a href="pages/marbleTheater.html">
 		<img id="marbleCourse1" class="place" src="assets/dirar/marble-sparkle.png"></a>
 		<img id="marbleCourse2" class="furniture" src="assets/dirar/marble-ramp1.png">
@@ -59,6 +60,9 @@
 		<img id="airVolcano" class="place" src="assets/sophie/air-volcano.png"></a>
 		<img id="puppyForest" class="place" src="assets/places/forest.png">
 		<img id="kayTents" class="building" src="assets/kay/tents.png">
+		<img id="basementStairs" class="building" src="assets/places/basement-stairs.png">
+		<a href="pages/bakery.html">
+		<img id="bakery" class="building" src="assets/places/bakery.png"></a>
 
 		<div id="aristotleCars">
 			<img class="draggable car" src="assets/aristotle/cars/car1.png">
@@ -99,16 +103,33 @@
 			<img class="draggable car" src="assets/rui/cars/car17.png">
 			<img class="draggable car" src="assets/rui/cars/car18.png">
 			<img class="draggable car" src="assets/rui/cars/car19.png">
+			<img id="redtransform" class="draggable car" ondblclick="transformId('rui','redtransform')" src="assets/rui/redtransform1.png">
+			<img class="draggable car" src="assets/rui/cars/car19.png">
+			<img class="draggable car" src="assets/rui/cars/car20.png">
+			<img class="draggable car" src="assets/rui/cars/car21.png">
+			<img class="draggable car" src="assets/rui/cars/car22.png">
+			<img class="draggable car" src="assets/rui/cars/car23.png">
+			<img class="draggable car" src="assets/rui/cars/car24.png">
+			<img class="draggable car" src="assets/rui/cars/car25.png">
+			<img class="draggable car" src="assets/rui/cars/car26.png">
+			<img class="draggable car" src="assets/rui/cars/car27.png">
+			<img class="draggable car" src="assets/rui/cars/car28.png">
+			<img class="draggable car" src="assets/rui/cars/car29.png">
+			<img class="draggable car" src="assets/rui/cars/car30.png">
+			<img class="draggable car" src="assets/rui/cars/car31.png">
+			<img class="draggable car" src="assets/rui/cars/car32.png">
+
 		</div>
 		<img id="azizBed" class="furniture" src="assets/aziz/bed.png">
 		<img id="aristotleRailroad" class="place" src="assets/aristotle/railroad-small.png">
-		<img id="amalToyShop" class="furniture" src="assets/amal/toy-shop.png">
+		<a href="assets/amal/toystore-inside.png">
+		<img id="amalToyShop" class="furniture" src="assets/amal/toy-shop.png"></a>
 		<img id="amalVolcano" class="building" src="assets/amal/volcano.png">
 		<img id="ruiVolcano" class="place" src="assets/rui/volcano.png">
 
 		<!-- 2021-1-11 -->
 		<img id="draggable" class="vehicle" src="assets/rui/three-guys.png">
-		<img id="draggable" class="avatar" src="assets/aziz/lizzy.png">
+		<img id="draggable" ondblclick="changeLizzy()" class="lizzy avatar" src="assets/aziz/lizzy.png">
 		<img id="draggable" ondblclick="playSound('azizBell')" class="avatar" src="assets/aziz/bell.png">
 		<audio id="azizBell" src="assets/aziz/bell.mp3"></audio>
 		<img id="draggable" class="wide-avatar" src="assets/aziz/snowman-cutter.png">
@@ -163,6 +184,7 @@
 			<img class="draggable small-item" src="assets/ava/tooth1.png">
 			<img class="draggable small-item" src="assets/ava/tooth2.png">
 			<img class="draggable item" src="assets/scarlet/top-hat.png">
+			<img class="draggable medium-item" src="assets/scarlet/bird.png">
 			<img class="draggable shrinkable pack-avatar" src="assets/sophie/penguins/1.png">
 			<img class="draggable shrinkable small-item" src="assets/scarlet/marshmallow.png">
 			<img class="draggable shrinkable pack-avatar" src="assets/ava/cat1.png">
@@ -449,16 +471,16 @@
 
 		<div id="draggable" class="pack">
 			<img class="pack-wide-avatar" src="assets/scarlet/cool-hat.png">
-			<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-cool.png">
-			<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-fancy.png">
+			<img id="scarletHeart" ondblclick="changeHeart()" class="draggable pack-wide-avatar" src="assets/scarlet/heart-cool.png">
+		<!-- 	<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-fancy.png">
 			<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-happy.png">
-			<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-sad.png">
+			<img class="draggable pack-wide-avatar" src="assets/scarlet/heart-sad.png"> -->
 		</div>
 	<img id="draggable" class="avatar" src="assets/ava/red-cat.png">
 	<img id="draggable" class="building" src="assets/ava/color-cloud.png">
 	<img id="draggable" class="building" src="assets/ava/tornado.png">
-	<img id="draggable" class="vehicle" src="assets/sophie/colorbag1.png">
-	<img id="draggable" class="vehicle" src="assets/sophie/colorbag1.png">
+	<img id="draggable" class="colorbag vehicle" ondblclick="transformClass('sophie','colorbag')" src="assets/sophie/colorbag1.png">
+	<img id="draggable" class="colorbago vehicle" ondblclick="transformClass('sophie','colorbago')" src="assets/sophie/colorbago1.png">
 	<img id="draggable" class="avatar" src="assets/dirar/marbles/1.png">
 	<img id="draggable" class="avatar" src="assets/dirar/marbles/2.png">
 	<img id="draggable" class="avatar" src="assets/dirar/marbles/3.png">
@@ -481,7 +503,37 @@
 	<img id="draggable" class="vehicle" src="assets/aristotle/big-rig.png">
 	<!-- 2021-2-17 -->
 	<img id="draggable" class="wide-avatar" src="assets/kay/frogie.png">
+	<img id="draggable" ondblclick="transformClass('amal','fish-food')" class="fish-food wide-avatar" src="assets/amal/fish-food1.png">
+	<img id="draggable" class="wide-avatar" src="assets/amal/angel.png">
+	<img id="draggable" class="wide-avatar" src="assets/aziz/face.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/elephant-dice.png">
+	<img id="draggable" class="avatar" src="assets/maria/alien.png">
+	<img id="draggable" class="avatar" src="assets/rui/hypnotic-monster.png">
+	<img id="draggable" class="avatar" src="assets/aziz/trophy.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/gangsta.png">
+	<img id="draggable" ondblclick="transformClass('maria','allergic-worm')" class="allergic-worm vehicle" src="assets/maria/allergic-worm1.png">
+	<img id="draggable" class="building" src="assets/kay/trio-cars.png">
+	<img id="draggable" ondblclick="transformClass('aristotle','swade')" class="swade wide-avatar" src="assets/aristotle/swade1.png">
+	<img id="draggable" class="wide-avatar" src="assets/rhonda/lily.png">
+	<img id="draggable" class="avatar" src="assets/rhonda/rusty.png">
+	<img id="draggable" class="avatar" src="assets/rhonda/cheety.png">
+	<img id="draggable" class="vehicle" src="assets/rhonda/firebolt.png">
+	<img id="draggable" class="vehicle" src="assets/rhonda/the-saver.png">
 
+	<!-- 2021-2-21 -->
+	<img id="draggable" class="avatar" src="assets/kay/berry-oats-apron.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/gangsta2.png">
+
+	<!-- 2021-2-22 -->
+	<img id="draggable" class="vehicle" src="assets/rui/blue-train.png">
+	<img id="draggable" class="wide-avatar" src="assets/maria/biker.png">
+	<img id="draggable" class="wide-avatar" src="assets/aristotle/ball.png">
+	<img id="draggable" class="avatar" src="assets/maria/gold-bird.png">
+	<img id="draggable" class="vehicle" src="assets/rui/optimus-prime.png">
+	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior1.png">
+	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior1.png">
+	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior2.png">
+	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior2.png">
 	</div>
 
 
@@ -502,6 +554,8 @@
 		<img id="amalPassport2" ondrag="enlarge('amalPassport2')" class="draggable tool" src="assets/amal/passport2.png">
 		<img id="computerButton" ondrag="enlarge('computerButton')" class="draggable tool" src="assets/aziz/computer-tool.png">
 		<img id="zoomButton" ondrag="enlarge('zoomButton')" class="draggable tool" src="assets/aziz/zoom.png">
+		<img id="kazooButton" ondblclick="playSound('kazoo')" ondrag="enlarge('kazooButton')" class="draggable tool" src="assets/amal/kazoo.png">
+		<audio id="kazoo" src="assets/amal/kazoo.mp3"></audio>
 		<a href="pages/schedule.html">
 		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
 		<img id="emergencyButton" class="tool" ondblclick="emergencyOn()" src="assets/tools/emergency-button.png">

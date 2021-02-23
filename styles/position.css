@@ -109,16 +109,16 @@
   left:4600px;
   top:2000px;
 }
-#sophieCandyland{
+#candyland{
   position:absolute;
-  left:9500px;
-  top:2750px;
+  left:9200px;
+  top:1750px;
   width:1500px;
 }
 #scarletVolcano{
   position:absolute;
-  left:10600px;
-  top:2750px;
+  left:10500px;
+  top:1150px;
   width:1500px;
 }
 #kayMarbleSlide{
@@ -162,10 +162,13 @@
 #kayRoad1{
   position:absolute;
   left:4040px;
-  top:2900px;
-  width:1500px;
+  top:2980px;
+  background-image: url('../assets/places/road2.png');
+  background-repeat: repeat;
+  height:300px;
+  width:10000px;
 }
-#kayRoad2{
+/*#kayRoad2{
   position:absolute;
   left:5340px;
   top:2980px;
@@ -174,15 +177,21 @@
 #kayRoad3{
   position:absolute;
   left:6640px;
-  top:3060px;
+  top:2980px;
   width:1500px;
 }
 #kayRoad4{
   position:absolute;
   left:7940px;
-  top:3140px;
+  top:2980px;
   width:1500px;
 }
+#kayRoad5{
+  position:absolute;
+  left:7940px;
+  top:2980px;
+  width:1500px;
+}*/
 #sunglasses{
   position:absolute;
   left:50px;
@@ -197,7 +206,7 @@
   position:absolute;
   left:4040px;
   top:3000px;
-  width:6000px;
+  width:10000px;
 }
 #aristotleCars img{
   margin:-30px;
@@ -267,4 +276,14 @@
   position:absolute;
   left:8940px;
   top:3500px;
+}
+#basementStairs{
+  position:absolute;
+  left:7640px;
+  top:4600px;
+}
+#bakery{
+  position:absolute;
+  top:3200px;
+  left:13500px;
 }

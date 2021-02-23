@@ -49,3 +49,38 @@ function showGlasses(){
 		showCounter=0;
 	}
 }
+var lizzyCounter = 0;
+function changeLizzy(){
+	lizzy = document.getElementsByClassName('lizzy')[0];
+	if(lizzyCounter==0){
+		lizzy.src="assets/aziz/lizzy2.png";
+		lizzyCounter++;
+	} else if (lizzyCounter==1){
+		lizzy.src="assets/aziz/lizzy3.png";
+		lizzyCounter++;
+	} else if (lizzyCounter==2){
+		lizzy.src="assets/aziz/lizzy4.png";
+		lizzyCounter++;
+	} else if (lizzyCounter==3){
+		lizzy.src="assets/aziz/lizzy.png";
+		lizzyCounter=0;
+	}
+}
+
+var heartCounter = 0;
+function changeHeart(){
+	heart = document.getElementById('scarletHeart');
+	if(heartCounter==0){
+		heart.src="assets/scarlet/heart-fancy.png";
+		heartCounter++;
+	} else if (heartCounter==1){
+		heart.src="assets/scarlet/heart-happy.png";
+		heartCounter++;
+	} else if (heartCounter==2){
+		heart.src="assets/scarlet/heart-sad.png";
+		heartCounter++;
+	} else if (heartCounter==3){
+		heart.src="assets/scarlet/heart-fancy.png";
+		heartCounter=0;
+	}
+}
