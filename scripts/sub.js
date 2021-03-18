@@ -1,3 +1,14 @@
+const thing = document.querySelectorAll('.avatar,.wide-avatar,.medium-item');
+
+for (var i = 0; i < thing.length; i++) {
+    thing[i].addEventListener('click', function(e) { 
+    	if (e.altKey) {
+    		console.log(this);
+    		this.style.display="none";
+    	}
+	})	
+}
+
 var transformCounter=0;
 function transform(makerString,idString){
 	element=document.getElementById(idString);

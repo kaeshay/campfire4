@@ -43,19 +43,43 @@ function emergencyOn(){
 	}
 }
 
+var slowCounter=0;
+function slowDown(){
+	element=document.getElementById("containment-wrapper");
+	if(slowCounter==0){
+		element.style.animation="blur 15s";
+		element.style.animationTimingFunction="ease-in";
+		element.style.animationFillMode="forwards";
+		slowCounter++;
+	} else if(slowCounter==1){
+		console.log('hi');
+		element.style.animation="none";
+		// element.style.animationFillMode="backwards";
+		slowCounter=0;
+	}
+}
+
 var lightCounter=0;
 function lightOff(){
 	element=document.getElementById('containment-wrapper');
 	toolbox=document.getElementById('toolbox');
 	toilet=document.getElementsByClassName('popup-toilet')[0];
 	if(lightCounter==0){
-		element.style.filter="invert(1)";
-		toolbox.style.filter="invert(1)";
+		// element.style.filter="invert(1)"
+		// toolbox.style.filter="invert(1)";
+		element.style.animation="invert 120s";
+		element.style.animationTimingFunction="ease-in";
+		element.style.animationFillMode="forwards";
+		toolbox.style.animation="invert 120s";
+		toolbox.style.animationTimingFunction="ease-in";
+		toolbox.style.animationFillMode="forwards";
 		toilet.src="assets/adriana/popup-toilet2.png";
 		lightCounter++;
 	} else if(lightCounter==1){
-		element.style.filter="invert(0)";
-		toolbox.style.filter="invert(0)";
+		element.style.filter="invert(0)"
+		toolbox.style.filter="invert(0)"
+		element.style.animation="none";
+		toolbox.style.animation="none";
 		toilet.src="assets/adriana/popup-toilet1.png";
 		lightCounter=0;
 	}

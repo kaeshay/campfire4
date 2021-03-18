@@ -1,3 +1,4 @@
+
 var positions = JSON.parse(localStorage.positions || "{}");
 $(function () {
     var d = $("[id=draggable]").attr("id", function (i) {
@@ -27,13 +28,13 @@ $(function() {
   });
 
 
-const loot = document.querySelectorAll('.stealable');
+// const loot = document.querySelectorAll('.stealable');
 
-for (var i = 0; i < loot.length; i++) {
-    loot[i].addEventListener('click', function(e) { 
-        if (e.altKey) {
-            // console.log(this);
-            this.style.display="none";
-        }
-    })  
-}
+// for (var i = 0; i < loot.length; i++) {
+//     loot[i].addEventListener('click', function(e) { 
+//         if (e.altKey) {
+//             // console.log(this);
+//             this.style.display="none";
+//         }
+//     })  
+// }

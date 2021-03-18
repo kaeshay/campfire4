@@ -1,9 +1,32 @@
+/*containment-wrapper{
+	
+}*/
+
 #containment-wrapper{
-	width:15000px;
-	height:7000px;
+	width:17000px;
+	height:8000px;
 	background-color:#ffffff;
 }
 
+@keyframes blur {
+  from{filter:blur(0px);}
+  to{filter:blur(7px);}
+}
+@keyframes invert {
+  from{filter:invert(0);}
+  to{filter:invert(1);}
+}
+/*#adjustment-layer{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background:rgba(255,0,0,0.3);
+	z-index:999999;
+	backdrop-filter: invert(1);
+	pointer-events:none;
+}*/
 .item{
 	position:absolute;
 	width:50px;
@@ -24,6 +47,12 @@
 	position:absolute;
 	width:200px;
 }
+.car{
+  width:200px;
+}
+.wide-car{
+	width:300px;
+}
 .building{
 	position:absolute;
 	width:800px;
@@ -43,15 +72,14 @@ height:300px;
 	position:absolute;
 	width:500px;
 }
-.pack{
-	position:absolute;
-	width:500px;
-}
 .pack-avatar{
 	width:70px;
 }
 .pack-wide-avatar{
 	width:120px;
+}
+.pack-vehicle{
+	width:200px;
 }
 .shrinkable{
 	width:30px;

@@ -1,16 +1,25 @@
 #outerspace{
   background-color:#000000;
   border:2px solid;
-  width:15000px;
+  width:17000px;
   height:1500px;
   background-image: url('../assets/amal/stars2.jpg');
   background-repeat: repeat;
 }
 #skyBelt{
-  width:15000px;
+  width:17000px;
   height:700px;
  /* background: black;*/
   background-image:url('../assets/amal/stars.png')
+}
+#kayRoad1{
+  position:absolute;
+  left:4040px;
+  top:2980px;
+  background-image: url('../assets/places/road2.png');
+  background-repeat: repeat;
+  height:300px;
+  width:12000px;
 }
 #emergencyCover{
   position:fixed;
@@ -159,15 +168,7 @@
   top:1200px;
   left:9000px;
 }
-#kayRoad1{
-  position:absolute;
-  left:4040px;
-  top:2980px;
-  background-image: url('../assets/places/road2.png');
-  background-repeat: repeat;
-  height:300px;
-  width:10000px;
-}
+
 /*#kayRoad2{
   position:absolute;
   left:5340px;
@@ -211,9 +212,6 @@
 #aristotleCars img{
   margin:-30px;
 }
-.car{
-  width:200px;
-}
 #spaghettiJail{
   position:absolute;
   left:7740px;
@@ -243,6 +241,11 @@
   position:absolute;
   left:8340px;
   top:4500px;
+}
+#convenienceStore{
+  position:absolute;
+  left:9440px;
+  top:3500px;
 }
 #airVolcano{
   position:absolute;
@@ -282,8 +285,111 @@
   left:7640px;
   top:4600px;
 }
+#kayBuildings{
+  position:absolute;
+  top:2000px;
+  left:13500px;
+  width:2000px;
+}
+#ruiBuildings{
+  position:absolute;
+  top:1700px;
+  left:15500px;;
+}
 #bakery{
   position:absolute;
   top:3200px;
   left:13500px;
+}
+#aristotleSteel{
+  top:4500px;
+  left:15500px;;
+}
+#kayGas{
+  top:3700px;
+  left:14500px;;
+}
+#bowlingAlley{
+  top:4700px;
+  left:13500px;;
+}
+#bowlingDance{
+  top:4770px;
+  left:14250px;;
+}
+#bowlingBalls{
+  top:4770px;
+  left:13700px;
+/*  border:2px #ccc solid;*/
+  width:400px;
+}
+#bowlingPins{
+  top:4770px;
+  left:14250px;
+  width:100px;
+}
+#bowlingPins img{
+  margin:-10px;
+}
+#ruiPlanets{
+  position:absolute;
+  top:100px;
+  left:5000px;
+}
+#lizzyCity{
+  top:5400px;
+  left:5500px;
+}
+#aristotleParking{
+  top:3400px;
+  left:15500px;
+}
+#icecreamShop{
+  top:3300px;
+  left:14500px;
+}
+#mariaUnicornLand{
+  top:5400px;
+  left:14500px;
+}
+#cheetyLand{
+  top:6400px;
+  left:14500px;
+  width:1500px;
+}
+#cohortRhonda{
+  top:6000px;
+  left:2000px;
+  border:2px solid #ccc;
+}
+#owenCastle{
+  top:5400px;
+  left:3500px;
+}
+#dinosaurs{
+  position:absolute;
+  width:1000px;
+  top:6500px;
+  left:15000px;
+}
+#dinosaurs img{
+  margin:-40px;
+}
+#phoneBooth{
+  top:3300px;
+  left:15200px;
+  pointer-events:none;
+}
+#phoneMachine{
+  top:3400px;
+  left:15240px;
+}
+#aristotleShortcut{
+  top:3151px;
+  left:10502px;
+  width:800px;
+}
+#azizCastle{
+  top:4670px;
+  left:14750px;
 }

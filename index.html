@@ -9,6 +9,8 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 </head>
 <body onLoad="window.scroll(600,2000)">
+	<div id="adjustment-layer">
+	</div>
 	<div id="containment-wrapper">
 		<div id="outerspace" style="">
 		</div>
@@ -60,10 +62,35 @@
 		<img id="airVolcano" class="place" src="assets/sophie/air-volcano.png"></a>
 		<img id="puppyForest" class="place" src="assets/places/forest.png">
 		<img id="kayTents" class="building" src="assets/kay/tents.png">
-		<img id="basementStairs" class="building" src="assets/places/basement-stairs.png">
+		<a href="file:///Users/kayliang/Desktop/campfire2/pages/basement.html">
+		<img id="basementStairs" class="building" src="assets/places/basement-stairs.png"></a>
 		<a href="pages/bakery.html">
 		<img id="bakery" class="building" src="assets/places/bakery.png"></a>
-
+		<a href="pages/elevator.html">
+		<img id="kayBuildings" class="place" src="assets/places/city.png"></a>
+		<img id="ruiBuildings" class="place" src="assets/rui/buildings.png">
+		<a href="pages/convenienceStore.html">
+		<img id="convenienceStore" class="furniture" src="assets/kay/convenience-store.png"></a>
+		<img id="ruiPlanets" class="place" src="assets/rui/planets.png">
+		<img id="kayGas" class="building" src="assets/places/gas-station.png">
+		<img id="aristotleParking" ondblclick="transformId('aristotle','aristotleParking')"class="place" src="assets/aristotle/aristotleParking1.png">
+		<img id="bowlingDance" class="wide-avatar" src="assets/bowling/dance.gif">
+		<img id="bowlingAlley" class="place" src="assets/bowling/alley.png">
+		<div id="bowlingPins" class="pack">
+			<img id="pin1" ondblclick="transformPin('pin1')" class="draggable avatar" src="assets/bowling/pin.png">
+			<img id="pin2" ondblclick="transformPin('pin2')" class="draggable avatar" src="assets/bowling/pin.png">
+			<img id="pin3" ondblclick="transformPin('pin3')" class="draggable avatar" src="assets/bowling/pin.png">
+			<img id="pin4" ondblclick="transformPin('pin4')" class="draggable avatar" src="assets/bowling/pin.png">
+		</div>
+		<div id="bowlingBalls" class="pack">
+			<img class="draggable pack-avatar" src="assets/bowling/ball1.png">
+			<img class="draggable pack-avatar" src="assets/bowling/ball2.png">
+			<img class="draggable pack-avatar" src="assets/bowling/bowling-ball1.png">
+			<img class="draggable pack-avatar" src="assets/bowling/bowling-ball2.png">
+		</div>
+		<a href="pages/azizCastle.html">
+		<img id="azizCastle" class="building" src="assets/aziz/castle.png"></a>
+		<img id="aristotleShortcut" class="place" src="assets/aristotle/shortcut.png">
 		<div id="aristotleCars">
 			<img class="draggable car" src="assets/aristotle/cars/car1.png">
 			<img class="draggable car" src="assets/aristotle/cars/car2.png">
@@ -118,14 +145,38 @@
 			<img class="draggable car" src="assets/rui/cars/car30.png">
 			<img class="draggable car" src="assets/rui/cars/car31.png">
 			<img class="draggable car" src="assets/rui/cars/car32.png">
-
+			<img class="draggable wide-car" src="assets/aristotle/big-rig.png">
+			<img class="draggable wide-car" src="assets/aristotle/train4.png">
+			<img class="draggable wide-car" src="assets/aristotle/rectangle.png">
+			<img class="draggable wide-car" src="assets/aristotle/hulk-truck.png">
+			<img class="draggable wide-car" src="assets/aristotle/big-rig2.png">
+			<img class="draggable wide-car" src="assets/rui/twins-car.png">
+			<img class="draggable car" src="assets/rui/blue-truck.png">
+			<img class="draggable furniture" src="assets/aziz/three-cars.png">
+			<img class="draggable wide-car" src="assets/aristotle/double-bus.png">
+			<a href="assets/rui/double-bus-inside.jpg">
+			<img class="draggable wide-car" src="assets/kay/double-bus.png"></a>
+			<img class="draggable car" src="assets/aristotle/orange-car.png">
 		</div>
 		<img id="azizBed" class="furniture" src="assets/aziz/bed.png">
-		<img id="aristotleRailroad" class="place" src="assets/aristotle/railroad-small.png">
+		<img id="aristotleRailroad" class="draggable place" src="assets/aristotle/railroad-small.png">
 		<a href="assets/amal/toystore-inside.png">
 		<img id="amalToyShop" class="furniture" src="assets/amal/toy-shop.png"></a>
 		<img id="amalVolcano" class="building" src="assets/amal/volcano.png">
 		<img id="ruiVolcano" class="place" src="assets/rui/volcano.png">
+		<img id="aristotleSteel" class="place" src="assets/aristotle/steel.png">
+		<a href="pages/lizzyCity.html">
+		<img id="lizzyCity" class="place" src="assets/maria/lizzyCity-small.png"></a>
+		<img id="icecreamShop" class="furniture" src="assets/aristotle/icecream-shop.png">
+		<img id="cheetyLand" class="place" src="assets/places/cheetyland.png">
+		<img id="mariaUnicornLand" class="draggable place" src="assets/maria/unicornland.png">
+		<a href="pages/owenCastle.html">
+		<img id="owenCastle" class="draggable place" src="assets/owen/castle.png"></a>
+		<img id="phoneMachine" ondblclick="transformClass('places','phone-machine')" class="phone-machine draggable avatar" src="assets/places/phone-machine1.png">
+		<img id="phoneBooth" class="draggable vehicle" src="assets/places/phone-booth.png">
+	
+		<div id="dinosaurs">
+		</div>
 
 		<!-- 2021-1-11 -->
 		<img id="draggable" class="vehicle" src="assets/rui/three-guys.png">
@@ -152,7 +203,8 @@
 		<!-- 2021-1-14 -->
 		<img id="draggable" class="furniture" src="assets/kay/crops.png">
 		<img id="draggable" class="place" src="assets/kay/horses.png">
-		<img id="draggable" ondblclick="transformClass('adriana','popup-toilet')" class="popup-toilet vehicle" src="assets/adriana/popup-toilet1.png">
+		<a href="pages/poopCity.html">
+		<img id="draggable" ondblclick="transformClass('adriana','popup-toilet')" class="popup-toilet vehicle" src="assets/adriana/popup-toilet1.png"></a>
 		<img id="draggable" class="vehicle" src="assets/kay/kindergarten.png">
 		<img id="draggable" ondblclick="transformClass('rui','rui-orange')"class="rui-orange item" src="assets/rui/rui-orange1.png">
 		<img id="draggable" class="item" src="assets/rui/tomato.png">
@@ -430,7 +482,7 @@
 		</div>
 		<img id="draggable" class="vehicle" src="assets/rui/snake.png">
 
-		<img id="draggable" class="stealable wide-avatar" src="assets/kay/crayon-crawler.png">
+		<img id="draggable" class="wide-avatar" src="assets/kay/crayon-crawler.png">
 		<img id="draggable" class="vehicle" src="assets/rui/carl.png">
 
 		<!-- 2021-2-11 -->
@@ -514,11 +566,11 @@
 	<img id="draggable" ondblclick="transformClass('maria','allergic-worm')" class="allergic-worm vehicle" src="assets/maria/allergic-worm1.png">
 	<img id="draggable" class="building" src="assets/kay/trio-cars.png">
 	<img id="draggable" ondblclick="transformClass('aristotle','swade')" class="swade wide-avatar" src="assets/aristotle/swade1.png">
-	<img id="draggable" class="wide-avatar" src="assets/rhonda/lily.png">
-	<img id="draggable" class="avatar" src="assets/rhonda/rusty.png">
-	<img id="draggable" class="avatar" src="assets/rhonda/cheety.png">
-	<img id="draggable" class="vehicle" src="assets/rhonda/firebolt.png">
-	<img id="draggable" class="vehicle" src="assets/rhonda/the-saver.png">
+	<img id="draggable" class="gone wide-avatar" src="assets/rhonda/lily.png">
+	<img id="draggable" class="gone avatar" src="assets/rhonda/rusty.png">
+	<img id="draggable" class="gone avatar" src="assets/rhonda/cheety.png">
+	<img id="draggable" class="gone vehicle" src="assets/rhonda/firebolt.png">
+	<img id="draggable" class="gone vehicle" src="assets/rhonda/the-saver.png">
 
 	<!-- 2021-2-21 -->
 	<img id="draggable" class="avatar" src="assets/kay/berry-oats-apron.png">
@@ -534,16 +586,90 @@
 	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior1.png">
 	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior2.png">
 	<img id="draggable" class="wide-avatar" src="assets/scarlet/invisible-warrior2.png">
+
+	<!-- 2021-2-25 -->
+	<img id="draggable" class="vehicle" src="assets/rui/creature1.png">
+	<img id="draggable" class="vehicle" src="assets/rui/creature2.png">
+	<img id="draggable" class="vehicle" src="assets/rui/creature3.png">
+
+	<!-- 2021-2-28 -->
+	<img id="draggable" class="avatar" src="assets/rui/hypnotic-monster-color.png">
+	<img id="draggable" ondblclick="ageTamo()" class="tamo avatar" src="assets/kay/tamo1.png">
+	<img id="draggable" class="avatar" src="assets/rui/hypnotic-blue.png">
+	<img id="draggable" class="avatar" src="assets/rui/hypnotic-purple.png">
+
+	<!-- 2021-3-3 -->
+	<img id="draggable" ondblclick="transformClass('aziz','azizBird')" class="azizBird avatar" src="assets/aziz/azizBird1.png">
+	<img id="draggable" class="wide-avatar" src="assets/kay/gas-staff.png">
+	<img id="draggable" ondblclick="transformClass('aziz','azizUmbrella')" class="azizUmbrella wide-avatar" src="assets/aziz/azizUmbrella1.png">
+	<div id="draggable" class="pack">
+		<img class="pack-avatar" src="assets/aziz/shoe1.png">
+		<img class="draggable pack-avatar" src="assets/aziz/shoe2.png">
 	</div>
+	<img id="draggable" class="wide-avatar" src="assets/rui/george-bath.png">
+	<img id="draggable" class="avatar" src="assets/aziz/drink.png">
+	<img id="draggable" class="avatar" src="assets/aziz/drink.png">
 
+	<!-- 2021-3-4 -->
+	<img id="draggable" class="avatar" src="assets/bowling/bowler1.png">
+	<img id="draggable" class="wide-avatar" src="assets/bowling/bowler2.png">
+	<img id="draggable" ondblclick="transformClass('rui','red-dino')" class="red-dino building" src="assets/rui/red-dino1.png">
+	<img id="draggable" class="avatar" src="assets/kay/pizza.png">
 
-	<div id="emergencyCover">
+	<!-- 2021-3-8 -->
+	<div id="draggable" class="pack">
+		<img class="furniture" src="assets/aziz/photoshop-monster2.png">
+		<img class="draggable vehicle" src="assets/aziz/photoshop-monster1.png">
 	</div>
+	<img id="draggable" class="vehicle" src="assets/aziz/balloony.png">
+	<img id="draggable" class="vehicle" src="assets/rui/dino-babies.png">
+	<img id="draggable" class="building" src="assets/rui/white-dino.png">
 
-	<div id="toolbox">
+	<!-- 2021-3-13 -->
+	<img id="draggable" class="furniture" src="assets/rui/protestors.png">
+	<img id="draggable" class="vehicle" src="assets/rui/blob1.png">
+	<img id="draggable" class="vehicle" src="assets/rui/blob2.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/blob3.png">
+	<img id="draggable" class="vehicle" src="assets/maria/bluemauz.png">
+
+	<!-- 2021-3-16 -->
+	<img id="draggable" class="vehicle" src="assets/kay/ghost-monster.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/ghost-monster.png">
+	<img id="draggable" class="vehicle" src="assets/rui/ghost-monster.png">
+	<img id="draggable" class="vehicle" src="assets/kay/guitar-boy.png">
+	<img id="draggable" class="vehicle" src="assets/rui/ghost-monster-boss.png">
+
+	<div id="cohortRhonda" class="pack">
+		<img class="draggable pack-wide-avatar" src="assets/ella/unicorn.png">
+		<img class="draggable pack-wide-avatar" src="assets/ella/chipmunk.png">
+		<img class="draggable pack-vehicle" src="assets/owen/car.png">
+		<img class="draggable pack-wide-avatar" src="assets/noah/cheety.png">
+		<img class="draggable pack-vehicle" src="assets/noah/rocket.png">
+		<img class="draggable pack-vehicle" src="assets/noah/flash.png">
+		<img class="draggable pack-wide-avatar" src="assets/rhonda/lily.png">
+		<img class="draggable pack-avatar" src="assets/rhonda/rusty.png">
+		<img class="draggable pack-avatar" src="assets/rhonda/cheety.png">
+		<img class="draggable pack-vehicle" src="assets/rhonda/	firebolt.png">
+		<img class="draggable pack-vehicle" src="assets/rhonda/the-saver.png">
+		<img class="draggable pack-wide-avatar" src="assets/noah/noah1.png">
+		<img class="draggable pack-wide-avatar" src="assets/noah/noah2.png">
+		<img class="draggable pack-wide-avatar" src="assets/noah/noah-happy.png">
+		<img class="draggable pack-wide-avatar" src="assets/ella/lego.png">
+		<img class="draggable pack-avatar" src="assets/ella/bunny.png">
+		<img class="draggable pack-avatar" src="assets/noah/charmander.png">
+		<img class="draggable pack-wide-avatar" src="assets/noah/dino.png">
+		<img class="draggable pack-wide-avatar" src="assets/owen/dragon.png">
+		<img ondblclick="transformClass('ella','ellaFlower')" class="ellaFlower draggable pack-avatar" src="assets/ella/ellaFlower1.png">
+	</div>
+</div>
+
+<div id="emergencyCover">
+</div>
+
+<div id="toolbox">
 		<img id="turnButton" class="tool" onclick="turnSwitch()" src="assets/tools/dice.png">
 		<a href="pages/spinTheWheel.html">
-		<img id="spinButton" class="tool" src="assets/tools/wheel-all.png"></a>
+		<img id="spinButton" class="tool" src="assets/tools/wheel-small.png"></a>
 		<img id="lightButton" class="tool" onclick="lightOff()" src="assets/tools/bulb.png">
 		<img id="sanitizerButton" class="draggable tool" ondblclick="sanitizerOpen()" src="assets/aziz/sanitizer-close.png">
 		<img id="brushButton" ondblclick="changeBrush()" class="draggable tool" src="assets/aziz/brush-tool.png">
@@ -558,10 +684,12 @@
 		<audio id="kazoo" src="assets/amal/kazoo.mp3"></audio>
 		<a href="pages/schedule.html">
 		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
+		<img id="slowButton" class="tool" onclick="slowDown()" src="assets/tools/slow-button.png">
 		<img id="emergencyButton" class="tool" ondblclick="emergencyOn()" src="assets/tools/emergency-button.png">
-	</div>
+</div>
 </body>
 <script type="text/javascript" src="scripts/draggable.js"></script>
+<script type="text/javascript" src="scripts/automate.js"></script>
 <script type="text/javascript" src="scripts/toggle.js"></script>
 <script type="text/javascript" src="scripts/tools.js"></script>
 </html>

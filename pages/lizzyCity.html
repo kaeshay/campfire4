@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lizzy City</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/sub.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+		#table{
+			position:absolute;
+			top:700px;
+			width:700px;
+		}
+		#feast{
+			position:absolute;
+			top:700px;
+			width:700px;
+/*			border:2px solid #ccc;*/
+		}
+		#feast img{
+			margin:10px;
+		}
+		#snake-charmer{
+			position:absolute;
+			top:500px;
+			left:700px;
+		}
+		#reptile-friends{
+			position:absolute;
+			top:500px;
+			left:1000px;
+		}
+		.cracks{
+			position:absolute;
+			width:50px;
+			height:50px;
+		}
+		#crack1{
+			top:400px;
+			left:200px;
+		}
+		#crack2{
+			top:450px;
+			left:600px;
+		}
+		#crack3{
+			top:600px;
+			left:800px;
+		}
+		#lizzyCastle{
+			position:absolute;
+			top:300px;
+			left:1500px;
+		}
+		#lizzyTower{
+			position:absolute;
+			top:200px;
+			left:1400px;
+		}
+		#rockHouse1{
+			position:absolute;
+			top:200px;
+			left:1400px;
+		}
+		#rockHouse2{
+			position:absolute;
+			top:200px;
+			left:1400px;
+		}
+		#rockHouse3{
+			position:absolute;
+			top:200px;
+			left:1400px;
+		}
+	</style>
+</head>
+<body>
+	<img class="wide-room" src="../assets/maria/lizzyCity.png">
+	<img id="table" class="draggable" src="../assets/rui/bugFeast/table.png">
+	<img id="lizzyCastle" class="draggable" src="../assets/aziz/lizzyCastle.png">
+	<img id="rockHouse1" class="draggable" src="../assets/maria/rockhouse1.png">
+	<img id="rockHouse1" class="draggable" src="../assets/maria/rockhouse2.png">
+	<img id="rockHouse1" class="draggable" src="../assets/maria/rockhouse3.png">
+	<img id="lizzyTower" class="draggable" src="../assets/aziz/lizzyTower.png">
+	<div id="feast">
+		<img class="draggable medium-item"  src="../assets/rui/bugFeast/hopper.png">
+		<img class="draggable wide-avatar"  src="../assets/rui/bugFeast/mantis.png">
+		<img class="draggable avatar"  src="../assets/rui/bugFeast/ant.png">
+		<img class="draggable avatar"  src="../assets/rui/bugFeast/spider.png">
+		<img class="draggable avatar"  src="../assets/aziz/mentos.png">
+		<img class="draggable avatar"  src="../assets/aziz/bug.png">
+		<img class="draggable avatar"  src="../assets/aziz/bug.png">
+		<img class="draggable avatar"  src="../assets/aziz/bug.png">
+		<img class="draggable avatar"  src="../assets/aziz/bug.png">
+		<img class="draggable avatar"  src="../assets/aziz/bug.png">
+		<img class="draggable avatar"  src="../assets/kay/bug1.png">
+		<img class="draggable avatar"  src="../assets/kay/bug2.png">
+		<img class="draggable wide-"  src="../assets/kay/bug3.png">
+	</div>
+	<div class="avatars">
+		<img class="draggable avatar" src="../assets/aziz/lizzy.png">
+		<img class="draggable avatar" src="../assets/rui/red-lizard.png">
+		<img class="draggable avatar" src="../assets/rui/blue-lizard.png">
+		<img class="draggable avatar" src="../assets/rui/orange-lizard.png">
+		<img class="draggable medium-item" src="../assets/maria/lazarus.png">
+		<img class="draggable medium-item" src="../assets/maria/elizabeth.png">
+		<img class="draggable wide-avatar" src="../assets/rui/snake1.png">
+		<img class="draggable medium-item" src="../assets/rui/snake2.png">
+		<img class="draggable wide-avatar" src="../assets/rui/snake3.png">
+		<img class="draggable wide-avatar" src="../assets/rui/snake4.png">
+	</div>
+		<img id="snake-charmer" class="draggable big-item" src="../assets/rui/snake-charmer.png">
+		<img id="reptile-friends" class="draggable big-item" src="../assets/rui/reptile-friends.png">
+		
+	<div class="inventory">
+	</div>
+	<a href="crack1.html">
+	<div id="crack1" class="cracks"></div></a>
+	<a href="crack2.html">
+	<div id="crack2" class="cracks"></div></a>
+	<a href="crack3.html">
+	<div id="crack3" class="cracks"></div></a>
+</body>
+<script type="text/javascript" src="../scripts/draggable.js"></script>
+<script type="text/javascript" src="../scripts/sub.js"></script>
+</html>

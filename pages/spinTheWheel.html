@@ -26,12 +26,37 @@
 </head>
 <body>
 <div id="wheelContainer">
-<img class="center" height="100" src="../assets/tools/wheel-pointer.png" />
-<img id="wheel" class="center" width="400" height="400" src="../assets/tools/wheel-aaar.png">
+<img class="center" height="100" onclick="changeWheel()" src="../assets/tools/wheel-pointer.png" />
+<img id="wheel" class="center" width="400" height="400" src="../assets/tools/wheel1.png">
+<!-- <img id="wheel" class="center" width="400" height="400" src="../assets/tools/wheel-noe.png"> -->
 </div>
 
 </body>
 <script>
+	var counter = 0;
+	function changeWheel(){
+		wheel=document.getElementById('wheel');
+		if (counter==0){
+			wheel.src="../assets/tools/wheel2.png";
+			counter++;
+		} else if (counter==1){
+			wheel.src="../assets/tools/wheel3.png";
+			counter++;
+		} else if (counter==2){
+			wheel.src="../assets/tools/wheel4.png";
+			counter++;
+		} else if (counter==3){
+			wheel.src="../assets/tools/wheel5.png";
+			counter++;
+		} else if (counter==4){
+			wheel.src="../assets/tools/wheel6.png";
+			counter++;
+		} else if (counter==5){
+			wheel.src="../assets/tools/wheel1.png";
+			counter=0;
+		} 
+	}
+
 	var img = document.getElementById("wheel");
 	img.addEventListener('click', onClick, false);
 
