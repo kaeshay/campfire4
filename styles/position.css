@@ -207,7 +207,7 @@
   position:absolute;
   left:4040px;
   top:3000px;
-  width:10000px;
+  width:13000px;
 }
 #aristotleCars img{
   margin:-30px;
@@ -215,7 +215,7 @@
 #spaghettiJail{
   position:absolute;
   left:7740px;
-  top:3400px;
+  top:3200px;
 }
 #azizBed{
   position:absolute;
@@ -227,6 +227,11 @@
   left:6440px;
   top:3300px;
 }
+#aristotleBumpy{
+  position:absolute;
+  left:7440px;
+  top:3800px;
+}
 #kayRiver{
   position:absolute;
   top:2000px;
@@ -237,9 +242,19 @@
   top:4400px;
   left:12000px;
 }
-#kayRink{
+#kayTwister{
+  position:absolute;
+  left:7340px;
+  top:4500px;
+}
+#ruiLiving{
   position:absolute;
   left:8340px;
+  top:4900px;
+}
+#kayRink{
+  position:absolute;
+  left:7340px;
   top:4500px;
 }
 #convenienceStore{
@@ -267,12 +282,12 @@
 #amalVolcano{
   position:absolute;
   left:9640px;
-  top:5500px;
+  top:5900px;
 }
 #ruiVolcano{
   position:absolute;
   left:8640px;
-  top:5500px;
+  top:5800px;
 }
 
 #amalToyShop{
@@ -282,7 +297,7 @@
 }
 #basementStairs{
   position:absolute;
-  left:7640px;
+  left:6640px;
   top:4600px;
 }
 #kayBuildings{
@@ -306,8 +321,8 @@
   left:15500px;;
 }
 #kayGas{
-  top:3700px;
-  left:14500px;;
+  top:3364px;
+  left:11376px;;
 }
 #bowlingAlley{
   top:4700px;
@@ -363,8 +378,8 @@
   border:2px solid #ccc;
 }
 #owenCastle{
-  top:5400px;
-  left:3500px;
+  top:7240px;
+  left:13315px;
 }
 #dinosaurs{
   position:absolute;
@@ -392,4 +407,28 @@
 #azizCastle{
   top:4670px;
   left:14750px;
+}
+#owenCity{
+  top:5440px;
+  left:13315px;
+  width:2000px;
+}
+#owenFerris{
+  top:5440px;
+  left:15315px;
+}
+#owenHouse{
+  top:6240px;
+  left:15315px;
+}
+
+#clayIslands{
+  top:6500px;
+  left:13300px;
+/*  width:1500px;*/
+}
+#trainIsland{
+	top:5307px;
+	left:2667px;
+	width:2000px;
 }
