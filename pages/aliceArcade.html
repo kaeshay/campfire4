@@ -10,14 +10,35 @@
 	body{
 		background-color:black;
 	}
+	.inventory img{
+		position:absolute;
+	}
+	#controller{
+		top:500px;
+	}
+	#maze{
+		left:300px;
+	}
 	</style>
 </head>
 <body>
+	<img id="maze" ondblclick="transformId('places','maze')" class="draggable room" src="../assets/places/maze1.png">
 	<div class="inventory">
-		<img class="draggable item" src="../assets/alice/arcade.png">
+		<img class="draggable small-item" src="../assets/alice/arcade.png">
+		<img id="controller" class="draggable medium-item" src="../assets/aziz/controller.png">
+		<img class="draggable avatar" src="../assets/rui/ghost1.png">
+		<img class="draggable avatar" src="../assets/rui/ghost2.png">
+		<img class="draggable avatar" src="../assets/rui/ghost3.png">
+		<img class="draggable avatar" src="../assets/rui/vitamin1.png">
+		<img class="draggable avatar" src="../assets/rui/vitamin2.png">
+		<img class="draggable avatar" src="../assets/rui/vitamin3.png">
+		<img class="draggable avatar" src="../assets/rui/vitamin4.png">
+		<img class="draggable avatar" src="../assets/rui/vitamin5.png">
+		<img class="draggable avatar" src="../assets/rui/pacman.png">
 	</div>
 	<div class="avatars">
 	</div>
 </body>
 <script type="text/javascript" src="../scripts/draggable.js"></script>
+<script type="text/javascript" src="../scripts/sub.js"></script>
 </html>

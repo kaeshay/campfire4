@@ -47,6 +47,25 @@
 #toolbox img{
   margin-left:10px;
 }
+.timeTool{
+  position:absolute;
+  width:30px;
+  height:100px;
+
+}
+#timer{
+  display:none;
+  flex-direction:column-reverse;
+  background-color:white;
+  border:solid 2px black;
+  top:-60px;
+  right:30px;
+  text-align:center;
+  
+}
+#timeBar{
+  background-color:blue;
+}
 #amalStage{
   position:absolute;
   left:1500px;
@@ -249,7 +268,7 @@
 }
 #ruiLiving{
   position:absolute;
-  left:8340px;
+  left:8540px;
   top:4900px;
 }
 #kayRink{
@@ -287,7 +306,7 @@
 #ruiVolcano{
   position:absolute;
   left:8640px;
-  top:5800px;
+  top:6700px;
 }
 
 #amalToyShop{
@@ -433,6 +452,24 @@
 	width:2000px;
 }
 #healthSpa{
-  top:5703px;
-  left:7344px;
+  top:5003px;
+  left:7544px;
+}
+#beards{
+  position:absolute;
+  left:50px;
+  top:20px;
+  width:100px;
+  display:none;
+}
+#beards img{
+  margin:-10px;
+}
+#bank{
+  left:8257px;
+  top:2193px;
+}
+#monsterBuilding{
+  left:16556px;
+  top:2000px;
 }

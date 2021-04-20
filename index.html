@@ -75,6 +75,8 @@
 		<img id="ruiBuildings" class="place" src="assets/rui/buildings.png">
 		<a href="pages/convenienceStore.html">
 		<img id="convenienceStore" class="furniture" src="assets/kay/convenience-store.png"></a>
+		<a href="pages/bank.html">
+		<img id="bank" class="building" src="assets/kay/bank.png"></a>
 		<img id="ruiPlanets" class="place" src="assets/rui/planets.png">
 		<img id="kayGas" class="building" src="assets/places/gas-station.png">
 		<img id="aristotleParking" ondblclick="transformId('aristotle','aristotleParking')"class="place" src="assets/aristotle/aristotleParking1.png">
@@ -102,6 +104,11 @@
 		<div id="aristotleCars">
 			<img class="draggable car" src="assets/aristotle/cars/car1.png">
 			<img class="draggable car" src="assets/aristotle/cars/car2.png">
+			<img class="draggable car" src="assets/aristotle/cars/car3.png">
+			<img class="draggable car" src="assets/aristotle/cars/car3.png">
+			<img class="draggable car" src="assets/aristotle/cars/car3.png">
+			<img class="draggable car" src="assets/aristotle/cars/car3.png">
+			<img class="draggable car" src="assets/aristotle/cars/car3.png">
 			<img class="draggable car" src="assets/aristotle/cars/car3.png">
 			<img class="draggable car" src="assets/aristotle/cars/car4.png">
 			<img class="draggable car" src="assets/aristotle/cars/car5.png">
@@ -167,6 +174,9 @@
 			<img class="draggable car" src="assets/aristotle/orange-car.png">
 			<img class="draggable car" src="assets/dirar/car1.png">
 			<img class="draggable car" src="assets/dirar/car2.png">
+			<img class="draggable car" src="assets/aziz/car1.png">
+			<img class="draggable car" src="assets/aziz/car2.png">
+			<img class="draggable car" src="assets/aziz/car3.png">
 		</div>
 		<img id="azizBed" class="furniture" src="assets/aziz/bed.png">
 		<img id="aristotleRailroad" class="draggable place" src="assets/aristotle/railroad-small.png">
@@ -188,6 +198,8 @@
 		<img id="phoneMachine" ondblclick="transformClass('places','phone-machine')" class="phone-machine draggable avatar" src="assets/places/phone-machine1.png">
 		<img id="phoneBooth" class="draggable vehicle" src="assets/places/phone-booth.png">
 		<img id="healthSpa" class="draggable place" src="assets/maria/healthspa.png">
+		<a href="pages/monsterBuilding.html">
+		<img id="monsterBuilding" class="draggable furniture" src="assets/places/monster-building.png"></a>
 	
 		<div id="dinosaurs">
 		</div>
@@ -505,7 +517,7 @@
 		<img id="draggable" class="vehicle" src="assets/kay/kilig.png">
 		<img id="draggable" class="vehicle" src="assets/amal/fairy1.png">
 		<img id="draggable" class="vehicle" src="assets/amal/fairy2.png">
-		<img id="draggable" class="badguy wide-avatar" ondblclick="transformClass('kay','badguy')" src="assets/kay/badguy1.png">
+		<img id="draggable" class="badguy wide-avatar" ondblclick="transformBadGuy()" src="assets/kay/badguy1.png">
 
 		<!-- 2021-2-14 -->
 		<img id="draggable" class="wide-avatar" src="assets/kay/ox.png">
@@ -766,6 +778,77 @@
 	<img id="draggable" class="avatar" src="assets/owen/animal5.png">
 	<img id="draggable" class="avatar" src="assets/owen/animal6.png">
 	<img id="draggable" class="vehicle" src="assets/bakery/arrows.png">
+
+	<!-- 2021-4-5 -->
+	<img id="draggable" class="avatar" src="assets/rui/star-buddy.png">
+	<img id="draggable" class="avatar" src="assets/kay/honey-bear.png">
+
+	<!-- 2021-4-6 -->
+	<img id="draggable" ondblclick="transformClass('maria','emergency-alarm')" class="emergency-alarm furniture" src="assets/maria/emergency-alarm1.png">
+
+	<!-- 2021-4-7 -->
+	<img id="draggable" class="furniture" src="assets/rui/police-cars.png">
+
+	<div id="draggable" class="pack">
+		<img ondblclick="showBeards()" class="mrbeardman vehicle" src="assets/aziz/mrbeardman1.png">
+			<div id="beards">
+				<img class="draggable pack-avatar" src="assets/rui/beard1.png">
+				<img class="draggable pack-avatar" src="assets/rui/beard2.png">
+				<img class="draggable pack-avatar" src="assets/rui/beard3.png">
+			</div>
+	</div>
+
+	<!-- 2021-4-8 -->
+	<img id="draggable" class="wide-avatar" src="assets/kay/monster-mom.png">
+	<img id="draggable" class="avatar" src="assets/kay/monster-teen-backpack.png">
+
+	<!-- 2021-4-9 -->
+	<img id="draggable" class="avatar" src="assets/aristotle/roblox.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/bus2.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po1.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po2.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po3.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po4.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po5.png">
+	<img id="draggable" class="vehicle" src="assets/aristotle/po6.png">
+
+	<!-- 2021-4-13 -->
+	<img id="draggable" class="vehicle" src="assets/rui/boat-face.png">
+	<img id="draggable" class="wide-avatar" src="assets/aziz/blue-babbit.png">
+	<img id="draggable" class="vehicle" src="assets/aziz/snowman-long.png">
+	<img id="draggable" class="item" src="assets/rui/toy/bear.png">
+	<img id="draggable" class="item" src="assets/rui/toy/hero.png">
+	<img id="draggable" class="item" src="assets/rui/toy/house.png">
+	<img id="draggable" class="item" src="assets/rui/toy/train.png">
+	<img id="draggable" class="item" src="assets/rui/toy/xylophone.png">
+	<img id="draggable" class="big-item" src="assets/rui/dentist-kit.png">
+	<img id="draggable" class="item" src="assets/rui/lego-set.png">
+	<img id="draggable" class="item" src="assets/rui/sound-box.png">
+
+	<!-- 2021-4-14 -->
+	<img id="draggable" class="item" src="assets/rui/toy/toy1.png">
+	<img id="draggable" class="item" src="assets/rui/toy/toy2.png">
+	<img id="draggable" class="big-item" src="assets/rui/toy/jump-rope.png">
+	<img id="draggable" class="avatar" src="assets/rui/toy/blazer.png">
+
+	<!-- 2021-4-15 -->
+	<img id="draggable" ondblclick="transformClass('amal','fish-food')" class="fish-food wide-avatar" src="assets/amal/fish-food1.png">
+	<img id="draggable" class="item" style="width:40px" src="assets/rui/beard1.png">
+
+	<!-- 2021-4-19 -->
+	<img id="draggable" class="furniture" src="assets/rui/robot.png">
+	<img id="draggable" class="vehicle" src="assets/rui/monster3.png">
+	<img id="draggable" class="vehicle" src="assets/rui/monster4.png">
+	<img id="draggable" class="furniture" src="assets/rui/monster5.png">
+	<img id="draggable" class="vehicle" src="assets/rui/monster6.png">
+	<img id="draggable" class="vehicle" src="assets/rui/monster7.png">
+
+	<!-- 2021-4-20 -->
+	<img id="draggable" class="wide-avatar" src="assets/rui/blue-felty.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/purple-felty.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/white-felty.png">
+	<img id="draggable" class="wide-avatar" src="assets/rui/penguin.png">
+	<img id="draggable" class="wide-avatar" src="assets/kay/lisa.png">
 </div>
 
 <div id="emergencyCover">
@@ -785,12 +868,16 @@
 		<img id="amalPassport2" ondrag="enlarge('amalPassport2')" class="draggable tool" src="assets/amal/passport2.png">
 		<img id="computerButton" ondrag="enlarge('computerButton')" class="draggable tool" src="assets/aziz/computer-tool.png">
 		<img id="zoomButton" ondrag="enlarge('zoomButton')" class="draggable tool" src="assets/aziz/zoom.png">
+		<img id="hammer" ondblclick="transformId('aristotle','hammer')" ondrag="enlarge('hammer')" class="draggable tool" src="assets/aristotle/hammer1.png">
 		<img id="kazooButton" ondblclick="playSound('kazoo')" ondrag="enlarge('kazooButton')" class="draggable tool" src="assets/amal/kazoo.png">
 		<audio id="kazoo" src="assets/amal/kazoo.mp3"></audio>
 		<a href="pages/schedule.html">
 		<img id="scheduleButton" class="tool" src="assets/tools/schedule.png"></a>
 		<img id="slowButton" class="tool" onclick="slowDown()" src="assets/tools/slow-button.png">
 		<img id="emergencyButton" class="tool" ondblclick="emergencyOn()" src="assets/tools/emergency-button.png">
+		<div id="timer" class="timeTool"><div id="timeBar" onclick="stop()" class="timeTool"></div>
+		</div>
+		<img id="timeButton" class="tool" onclick="start()" src="assets/tools/timer.png">
 </div>
 </body>
 <script type="text/javascript" src="scripts/draggable.js"></script>

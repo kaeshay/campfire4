@@ -162,3 +162,22 @@ function transformPin(idString){
 		pinCounter=0;
 	}
 }
+var beardCounter = 0;
+function showBeards(){
+	seller = document.getElementsByClassName("mrbeardman")[0];
+	beards =  document.getElementById("beards");
+	if(beardCounter==0){
+		seller.src="assets/aziz/mrbeardman2.png";
+		beards.style.display='block';
+		beardCounter++;
+	} else if (beardCounter==1){
+		seller.src="assets/aziz/mrbeardman1.png";
+		beards.style.display='none';
+		beardCounter=0;
+	}
+}
+var badGuyCounter = 0;
+function transformBadGuy(){
+	badguy=document.getElementByClassName('badguy')[0];
+	
+}

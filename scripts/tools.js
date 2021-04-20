@@ -111,6 +111,32 @@ function changeBrush(){
 		brushCounter++;
 	}
 }
+var timeCounter = 0;
+var newTime = 100;
+var timerInterval = null;
+var startCounter = 0;
+function start() {
+  if (startCounter==0){
+	  document.getElementById("timer").style.display="flex";
+	  stop(); // stoping the previous counting (if any)
+	  timeCounter = 240;
+	  timerInterval = setInterval(changeValue, 1000); 
+	  startCounter++;
+  } else if (startCounter==1){
+  	 playSound('kazoo');
+  	 document.getElementById("timer").style.display="none";
+  	 startCounter=0;
+  }
+}
+var stop = function() {
+  clearInterval(timerInterval);
+  newTime = 100;
+  document.getElementById("timeBar").style.height = newTime +"px";
+}
+function changeValue() {
+  newTime -= (100/timeCounter);
+  document.getElementById("timeBar").style.height = newTime +"px";
+}
 
 function enlarge(idString){
 	element=document.getElementById(idString);
