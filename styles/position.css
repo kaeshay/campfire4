@@ -1,13 +1,13 @@
 #outerspace{
   background-color:#000000;
   border:2px solid;
-  width:17000px;
+  width:20000px;
   height:1500px;
   background-image: url('../assets/amal/stars2.jpg');
   background-repeat: repeat;
 }
 #skyBelt{
-  width:17000px;
+  width:20000px;
   height:700px;
  /* background: black;*/
   background-image:url('../assets/amal/stars.png')
@@ -275,6 +275,9 @@
   position:absolute;
   left:7340px;
   top:4500px;
+ /* top:0px;
+  left:-2000px;*/
+  width:3000px;
 }
 #convenienceStore{
   position:absolute;
@@ -471,5 +474,30 @@
 }
 #monsterBuilding{
   left:16556px;
-  top:2000px;
+  top:500px;
+}
+#noahOcean{
+  left:13067px;
+  top:6200px;
+  width:1500px;
+}
+#noahPalm{
+  left:14503px;
+  top:7130px;
+}
+#noahBleeker{
+  left:16200px;
+  top:5530px;
+}
+#tallTree{
+  left:15126px;
+  top:236px;
+}
+#eiffelTower{
+  left:16756px;
+  top:1000px;
+}
+#ninjaStore{
+  left:14486px;
+  top:3931px;
 }

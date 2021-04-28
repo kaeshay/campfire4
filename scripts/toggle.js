@@ -181,3 +181,17 @@ function transformBadGuy(){
 	badguy=document.getElementByClassName('badguy')[0];
 	
 }
+
+var bookCounter=0;
+function openBook(){
+	element=document.getElementsByClassName("spellbook")[0];
+	if(bookCounter==0){
+		element.src="assets/kay/spellbook-open.png";
+		element.style.width="120px";
+		bookCounter++;
+	} else if(bookCounter==1){
+		element.src="assets/kay/spellbook.png";
+		element.style.width="70px";
+		bookCounter=0;
+	}
+}
