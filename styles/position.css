@@ -339,8 +339,9 @@
   left:13500px;
 }
 #aristotleSteel{
-  top:4500px;
-  left:15500px;;
+  left:17446px;
+  top:3135px;
+  width:2000px;
 }
 #kayGas{
   top:3364px;
@@ -497,7 +498,24 @@
   left:16756px;
   top:1000px;
 }
+#londonBuildings{
+  left:17656px;
+  top:1200px;
+  width:2000px;
+}
 #ninjaStore{
   left:14486px;
   top:3931px;
+}
+#kungfuStore{
+  left:15086px;
+  top:3931px;
+}
+#mouseClubhouse{
+  left:7042px;
+  top:5292px;
+}
+#azizVolcano{
+  left:8019px;
+  top:6650px;
 }

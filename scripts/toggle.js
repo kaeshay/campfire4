@@ -7,7 +7,7 @@ document.getElementById('containment-wrapper').onclick = function clickEvent(e) 
 
 
 
-const thing = document.querySelectorAll('.avatar,.car,.wide-avatar,.pack-avatar,.pack-wide-avatar,.pack-vehicle,.vehicle,.building,.item');
+const thing = document.querySelectorAll('.avatar,.car,.wide-avatar,.pack-avatar,.mouse,.pack-wide-avatar,.pack-vehicle,.vehicle,.building,.item');
 // const container = document.getElementById('containment-wrapper');
 
 // container.addEventListener('click',function(el) {

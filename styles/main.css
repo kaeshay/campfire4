@@ -86,6 +86,10 @@ height:300px;
 .food{
 	width:50px;
 }
+.mouse{
+	position:absolute;
+	width:20px;
+}
 .gone{
 	display:none;
 }
