@@ -33,3 +33,23 @@ function transformId(makerString, idString){
 		}
 	// }
 }
+
+var mazeCounter=0;
+function transformMaze(){
+	element=document.getElementById('maze');
+	// for (var i=0;i<classString.length;i++){
+		if(mazeCounter==0){
+			element.src="../assets/places/maze1.png";
+			mazeCounter++;
+		} else if(mazeCounter==1){
+			element.src="../assets/places/maze2.png";
+			mazeCounter++;
+		} else if(mazeCounter==2){
+			element.src="../assets/places/maze3.png";
+			mazeCounter++;
+		} else if(mazeCounter==3){
+			element.src="../assets/places/maze4.png";
+			mazeCounter=0;
+		}
+	// }
+}

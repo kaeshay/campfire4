@@ -119,7 +119,7 @@ function start() {
   if (startCounter==0){
 	  document.getElementById("timer").style.display="flex";
 	  stop(); // stoping the previous counting (if any)
-	  timeCounter = 240;
+	  timeCounter = 120;
 	  timerInterval = setInterval(changeValue, 1000); 
 	  startCounter++;
   } else if (startCounter==1){
