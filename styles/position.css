@@ -541,3 +541,25 @@
   left:15755px;
   top:4653px;
 }
+#subwayStation{
+  left:5158px;
+  top:3352px;
+}
+#ruiIceCream{
+  left:16421px;
+  top:4578px;
+}
+#coalTrain{
+  left:3027px;
+  top:5351px;
+  pointer-events:none;
+}
+#ellaVolcano{
+  left:16321px;
+  top:6640px
+}
+#noahVolcano{
+  left:17321px;
+  top:5640px;
+  width:2000px;
+}

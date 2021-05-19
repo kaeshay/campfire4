@@ -36,20 +36,43 @@ function transformId(makerString, idString){
 
 var mazeCounter=0;
 function transformMaze(){
+	inventory=document.getElementsByClassName('game');
 	element=document.getElementById('maze');
-	// for (var i=0;i<classString.length;i++){
 		if(mazeCounter==0){
 			element.src="../assets/places/maze1.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
 			mazeCounter++;
 		} else if(mazeCounter==1){
 			element.src="../assets/places/maze2.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
 			mazeCounter++;
 		} else if(mazeCounter==2){
 			element.src="../assets/places/maze3.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
 			mazeCounter++;
 		} else if(mazeCounter==3){
 			element.src="../assets/places/maze4.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
+			mazeCounter++;
+		} else if(mazeCounter==4){
+			element.src="../assets/places/maze5.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
+			mazeCounter++;
+		} else if(mazeCounter==5){
+			element.src="../assets/places/maze6.png";
+			for (var i=0;i<inventory.length;i++){
+			inventory[i].style.display="block";
+			}
 			mazeCounter=0;
 		}
-	// }
 }

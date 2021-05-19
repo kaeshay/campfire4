@@ -7,6 +7,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 	<style>
+		.avatars{
+			left:400px;
+		}
 		#table{
 			position:absolute;
 			top:700px;
@@ -117,6 +120,12 @@
 			top:500px;
 			left:1900px;
 		}
+		#gemShop{
+			position:absolute;
+			top:1000px;
+			left:2700px;
+			width:200px;
+		}
 	</style>
 </head>
 <body>
@@ -131,6 +140,13 @@
 	<img id="computer" class="big-item draggable" src="../assets/maria/computer.png">
 	<img id="bathroom" class="room" src="../assets/rui/lizzy-bathroom.png">
 	<img id="tv" class="big-item draggable" src="../assets/kay/lizzy-tv.png">
+	<div id="gemShop">
+		<img class="avatar draggable" src="../assets/maria/gem-hoarder-illina.png">
+		<img class="item draggable" src="../assets/maria/gemstone1.png">
+		<img class="item draggable" src="../assets/maria/gemstone2.png">
+		<img class="item draggable" src="../assets/maria/gemstone3.png">
+		<img class="small-item draggable" style="width:30px" src="../assets/maria/gemstone4.png">
+	</div>
 	<div id="feast">
 		<img class="draggable medium-item"  src="../assets/rui/bugFeast/hopper.png">
 		<img class="draggable wide-avatar"  src="../assets/rui/bugFeast/mantis.png">
@@ -153,6 +169,10 @@
 		<img class="draggable wide-avatar"  src="../assets/aziz/chicken-food.png">
 		<img class="draggable wide-avatar"  src="../assets/rui/chicken.png">
 		<img id="eggs" class="draggable wide-avatar" ondblclick="transformEggs()"src="../assets/rui/eggs1.png">
+		<img class="draggable item"  src="../assets/rui/overeasy-egg.png">
+		<img class="draggable avatar"  src="../assets/kay/bucket.png">
+		<img class="draggable wide-avatar"  src="../assets/rui/grass.png">
+		<img class="medium-item draggable" src="../assets/kay/cow.png">
 	</div>
 	<div class="avatars">
 		<img class="draggable avatar" src="../assets/aziz/lizzy.png">
@@ -177,13 +197,13 @@
 	<div class="inventory">
 	</div>
 	<a href="crack1.html">
-	<div id="crack1" class="cracks"></div></a>
+	<img id="crack1" class="cracks" src="../assets/rui/lizard-sign2.png"></a>
 	<a href="crack2.html">
-	<div id="crack2" class="cracks"></div></a>
+	<img id="crack2" class="cracks" src="../assets/rui/snake-sign.png"></a>
 	<a href="crack3.html">
-	<div id="crack3" class="cracks"></div></a>
+	<img id="crack3" class="cracks" src="../assets/rui/lizard-sign.png"></div></a>
 	<a href="lizzyCrack.html">
-	<div id="lizzyCrack" class="cracks"></div></a>
+	<img id="lizzyCrack" class="cracks" src="../assets/rui/lizzy-sign.png"></a>
 	<img id="whiteSpace" class="draggable big-item" src="../assets/aziz/white-space.png">
 </body>
 <script type="text/javascript" src="../scripts/draggable.js"></script>
