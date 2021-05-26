@@ -453,7 +453,7 @@
 #trainIsland{
 	top:5307px;
 	left:2667px;
-	width:2000px;
+	width:2500px;
 }
 #healthSpa{
   top:5003px;
@@ -562,4 +562,19 @@
   left:17321px;
   top:5640px;
   width:2000px;
+}
+#snackParlor{
+  left:8223px;
+  top:5004px;
+  width:300px;
+}
+#hats{
+/*  display:none;*/
+  position:absolute;
+  top:200px;
+  width:100px;
+}
+#dragonBase{
+  left:16639px;
+  top:3398px;
 }

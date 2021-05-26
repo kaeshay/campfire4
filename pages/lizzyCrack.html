@@ -6,14 +6,52 @@
 	<link rel="stylesheet" type="text/css" href="../styles/sub.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<style>
+		#living{
+			position:absolute;
+			left:400px;
+			width:500px;
+			top:200px;
+			pointer-events:none;
+		}
+		#tv{
+			position:absolute;
+			left:470px;
+			top:300px;
+			width:120px;
+		}
+	</style>
 </head>
 <body>
-	<img class="wide-room" src="../assets/aziz/crack.png">
+	<img id="crack" class="wide-room" src="../assets/aziz/crack1.png">
+	<img id="tv" class="draggable" ondblclick="transformTv()" src="../assets/lizzyTv/1.gif">
+	<img id="living" class="room" src="../assets/kay/lizzy-living.png">
 	<div class="avatars">
 		<img class="draggable medium-item" src="../assets/aziz/lizzy.png">
 	</div>
 	<div class="inventory">
+		<img ondblclick="transform('aziz','crack')" class="draggable small-item" src="../assets/maria/gemstone4.png">
 	</div>
 </body>
+<script>
+	tvCounter=0;
+	function transformTv(){
+		tv=document.getElementById('tv');
+		if (tvCounter==0){
+			tv.src="../assets/lizzyTv/2.gif"
+			tvCounter++;
+		}else if (tvCounter==1){
+			tv.src="../assets/lizzyTv/3.gif"
+			tvCounter++;
+		}else if (tvCounter==2){
+			tv.src="../assets/lizzyTv/4.gif"
+			tvCounter++;
+		}else if (tvCounter==3){
+			tv.src="../assets/lizzyTv/1.gif"
+			tvCounter=0;
+		}
+	}
+</script>
 <script type="text/javascript" src="../scripts/draggable.js"></script>
+<script type="text/javascript" src="../scripts/sub.js"></script>
 </html>

@@ -7,7 +7,7 @@ document.getElementById('containment-wrapper').onclick = function clickEvent(e) 
 
 
 
-const thing = document.querySelectorAll('.avatar,.car,.wide-avatar,.pack-avatar,.mouse,.pack-wide-avatar,.pack-vehicle,.vehicle,.building,.item');
+const thing = document.querySelectorAll('.avatar,.car,.wide-avatar,.pack-avatar,.mouse,.pack-wide-avatar,.pack-vehicle,.vehicle,.building,.furniture,.item');
 // const container = document.getElementById('containment-wrapper');
 
 // container.addEventListener('click',function(el) {
@@ -105,6 +105,21 @@ function changeLizzy(){
 	} else if (lizzyCounter==3){
 		lizzy.src="assets/aziz/lizzy.png";
 		lizzyCounter=0;
+	}
+}
+
+var leafmanCounter = 0;
+function changeLeafman(){
+	leafman = document.getElementsByClassName('leafman')[0];
+	if(leafmanCounter==0){
+		leafman.src="assets/aziz/leafman2.png";
+		leafmanCounter++;
+	} else if (leafmanCounter==1){
+		leafman.src="assets/aziz/leafman3.png";
+		leafmanCounter++;
+	} else if (leafmanCounter==2){
+		leafman.src="assets/aziz/leafman1.png";
+		leafmanCounter=0;
 	}
 }
 
